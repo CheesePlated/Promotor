@@ -1,0 +1,65 @@
+=================
+PROMOTOR'S REPORT
+=================
+
+I hereby initiate a referendum on each of the following proposals, removing
+them from the proposal pool. For each referendum the vote collector is the
+Assessor, the quorum is 6, the adoption index is that of the associated
+proposal, the voting method is AI-majority, and the valid options are FOR
+and AGAINST. (PRESENT and conditional votes are also both valid options.)
+
+ID      Author(s)       AI  Title
+------------------------------------------------------------------
+9233*   Murphy          3   Significant but not essential
+------------------------------------------------------------------
+
+The proposal pool contains the following proposals:
+ID      Author(s)       AI  Title
+------------------------------------------------------------------
+
+------------------------------------------------------------------
+
+Legend:
+NNNN*: Democratic proposal
+NNNN~: Ordinary proposal
+Authors are listed author first, then co-authors (if any)
+
+The full text of all above mentioned proposals is listed below.
+
+==========
+ID 9233
+Significant but not essential (AI=3)
+
+
+Amend Rule 107 (Initiating Agoran Decisions) by appending this text
+after the last list item:
+
+       The person publishing the notice SHALL also include any additional
+       information defined by the rules as significant parameters.
+
+Amend Rule 1607 (Distribution) by replacing this text:
+
+       A referendum is the Agoran decision to determine whether to adopt
+       a proposal (its associated proposal). For this decision, the vote
+       collector is the Assessor, the adoption index is initially the
+       adoption index of the proposal, and the text, author, coauthors,
+       and class of the proposal are essential parameters. Initiating a
+       referendum is known as distribution, and removes the proposal from
+       the Proposal Pool.
+
+with this text:
+
+       A referendum is the Agoran decision to determine whether to adopt
+       a proposal (its associated proposal). For this decision, the vote
+       collector is the Assessor, the adoption index is initially the
+       adoption index of the proposal, the text of the proposal is an
+       essential parameter, and the author, coauthors, and class of the
+       proposal are significant parameters. Initiating a referendum is
+       known as distribution, and removes the proposal from the Proposal
+       Pool.
+
+[Downgrades e.g. forgetting to include class from "invalidates the
+  distribution until/unless ratification papers over it" to "Assessor
+  may get some Blots".]
+
+==========

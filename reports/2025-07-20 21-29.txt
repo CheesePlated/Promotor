@@ -1,0 +1,246 @@
+> CoE: this omits multiple proposals (7 by my quick scan, as the second link has two separate proposals):
+
+I initiate a referendum on each of the following proposals, removing
+them from the proposal pool. For each referendum the vote collector is the
+Assessor, the quorum is 6, the adoption index is that of the associated
+proposal, the voting method is AI-majority, and the valid options are FOR
+and AGAINST. (PRESENT, ENDORSE and conditional votes are also all valid options.)
+
+ID       Author(s)              AI   Title
+-------------------------------------------------------------------
+9234~    Mischief               1    Prix Fixe
+9235~    Murphy                 1    Agoricultural Enabling Act
+9236~    Murphy                 1    Landlocked
+9237~    oliver.n,Mischief      1    Pyrite Fungibility
+9238*    Murphy,Janet,Mischief  3    Make currency current again
+9239*    Murphy                 3    Gray timing
+-------------------------------------------------------------------
+
+I submit the following revised promotor's report in response to the above-quoted CoE.
+
+The proposal pool contains the following proposals:
+ID       Author(s)              AI   Title
+-------------------------------------------------------------------
+9240~    Mischief,juan          1    Agoran Bingo
+-------------------------------------------------------------------
+
+Legend:
+NNNN*: Democratic proposal
+NNNN~: Ordinary proposal
+Authors are listed author first, then co-authors (if any)
+
+The full text of all above mentioned proposals is listed below.
+
+==========
+ID 9234
+Prix Fixe (AI=1)
+
+[The variable cost nature of this fee means that from time to time, one
+failed purchase causes subsequent purchases to fail. To simplify things,
+this switches it to a flat fee since a player's Spendie holdings already
+limit how many times e can do this. It is calibrated so that the three
+purchases per month afforded by 20 Spendies have the same cost as today.]
+Amend rule 2659 (Stamps) by replacing:
+
+      Any player CAN pay a fee of 5 + (X) Spendies to transfer a
+      specified stamp from the L&FD to emself. X is equal to the number
+      of times e has already done so in the current month.
+
+with:
+
+      Any player CAN pay a fee of 6 Spendies to transfer a specified
+      stamp from the L&FD to emself.
+
+==========
+ID 9235
+Agoricultural Enabling Act (AI=1)
+
+Amend the rule titled "The Land Managor" by replacing "Land Manager"
+with "Land Managor".Amend the the rule titled "Genetic Modification" by replacing the first
+paragraph with:
+
+      Once per Crop Season, a player CAN pay a fee of 500 Pyrite to
+      create a new type of Crop, specifying its name. The Land Managor
+      CAN once by announcement, and SHALL in a timely fashion, randomly
+      select its Crop Season, Seed Cost (50 to 200), Growth Duration (3
+      to 24), and Sell Price (100 to 400). Rules to the contrary
+      notwithstanding, it CANNOT be planted before this announcement.
+
+==========
+ID 9236
+Landlocked (AI=1)
+
+Create a rule titled "Hectares" with this text:
+
+      Hectare is a type of fixed asset, tracked by the Land Managor.
+
+      A player CAN pay a fee of 500 Pyrite to gain 1 Hectare.
+
+Amend Rule 2499 (Welcome Packages) by adding this item to the list:
+
+      * 16 Hectares.
+
+Each player gains 16 Hectares.
+
+Amend the rule titled "The Growth Cycle" by replacing the first
+paragraph with:
+
+      A player CAN plant an in-season Crop by paying a fee in Pyrite
+      equal to its Seed Cost, provided that eir number of Hectares is
+      greater than the number of Crops e planted earlier in the current
+      Crop Season and has not yet harvested.
+
+==========
+ID 9237
+Pyrite Fungibility (AI=1)
+
+If Proposal 9230 (Agoriculture) has not been adopted, this proposal has
+no effect.
+
+Amend the rule titled "Pyrite" by replacing the text:
+
+    Pyrite is a type of fixed asset
+
+with:
+
+    Pyrite is a type of fixed fungible asset
+
+[Comment: This is presumably the intended use of Pyrite as a currency.
+Also, it saves the Land Managor the work of tracking each Pyrite
+individually, especially since there can be thousands of them.]
+
+==========
+ID 9238
+Make currency current again (AI=3)
+
+Amend Rule 2578 (Fungibility) by replacing this text:
+
+      A fungible asset is one where
+
+with this text:
+
+      A fungible asset (syn. "currency") is an asset where
+
+Amend Rule 2555 (Blots) by replacing "fungible asset" with "currency".
+
+Amend Rule 2579 (Fee-based Actions) by replacing "fungible asset" with
+"currency".
+
+Amend Rule 2690 (Spendies) by replacing "fungible liquid asset" with
+"currency".
+
+[Liquid is already the default, per Rule 2577.]
+
+Amend Rule 2700 (Candles) by replacing "Candles are fixed fungible
+assets" with "Candles are a fixed currency".
+
+Amend the rule titled "Pyrite" by replacing the first paragraph with:
+
+      Pyrite is a type of fixed currency, tracked by the Land Managor.
+
+Amend the rule titled "Hectares" by replacing "fixed asset" with
+"fixed currency".
+
+[Non-currency assets: Promises, only fungible if creator and text are
+ also identical; Stamps, only fungible if type is also identical; the
+ Veblen.]
+
+==========
+ID 9239
+Gray timing (AI=3)
+
+Amend Rule 2438 (Ribbons) by replacing this text:      Gray (A): Once per month the Tailor CAN, by announcement, cause a
+      specified player to earn a Gray Ribbon. E is ENCOURAGED to do so
+      in the same message in which e publishes eir monthly report.
+
+with this text:
+
+      Gray (A): Once per month the Tailor CAN, by announcement, cause a
+      specified player to earn a Gray Ribbon. E is ENCOURAGED to do so
+      before publishing eir monthly report.
+
+["In the same message" doesn't play well with my recordkeeping software,
+ and I don't think anyone has mentioned this clause any time recently.]
+
+==========
+ID 9240
+Agoran Bingo (AI=1)
+
+[The person running a bingo game is often called the caller. Agoran spelling
+would make that Callor. My eyes want to read that as "caal-lore" and since
+it's the same letters, I just changed it to Collar out of whimsy.]
+Create a rule entitled "Agoran Bingo" with power 1 reading:
+
+      The Collar is an elected office responsible for administering
+      Agoran Bingo.
+
+      Bingo state is a singleton switch tracked by the Collar with
+      possible values paused (default) and unpaused.
+
+      If the bingo state is paused, the Collar CAN flip it to unpaused
+      by announcement, and e SHOULD do so unless there is reasonable
+      uncertainty as to the current bingo state or the validity of a
+      claimed bingo, or the Collar is actively drafting, discussing, or
+      trying to enact or amend eir administrative regulations. When the
+      bingo state is paused, all existing bingo board selections are
+      null and void, a player CANNOT select a bingo board, and a player
+      CANNOT call bingo.
+
+      If the bingo state is unpaused, a player whose bingo board
+      contains at least one winning pattern of conditions -- as defined
+      in the Collar's regulations -- that are all satisfied CAN call
+      bingo by announcement. (For clarity, the states of any conditions
+      not in the winning pattern are irrelevant.) Eir announcement:
+
+      1) MUST specify the claimed winning pattern and the conditions it
+         contains;
+
+      2) MUST reveal any information required by the Collar's
+         adminstrative regulations for the method e used to select a
+         bingo board; and
+
+      3) SHOULD include evidence demonstrating that each of the
+         conditions in the winning pattern is satisfied, other than any
+         conditions where such satisfaction is already clearly obvious.
+
+      When a player successfully calls bingo, e wins the game and the
+      bingo state is flipped to paused.
+
+      If no player has successfully called bingo in the previous 3
+      months, the Collar can flip the bingo state to paused without 2
+      objections.
+
+
+Create a rule entitled "Regulating Agoran Bingo" with power 1 reading:
+
+      The Collar SHOULD try to enact and maintain administrative
+      regulations defining:
+
+      * one or more methods for a player to select a bingo board;
+
+      * the conditions that can be included on a player's bingo board;
+        and
+
+      * one or more winning bingo patterns
+
+
+      The methods for selecting a bingo board SHOULD be such that:
+
+      * there is at least one method that permits a player to keep eir
+        bingo board secret until e calls bingo;
+
+      * a player cannot change eir selection once made; and
+
+      * a player cannot choose in advance with certainty the board e
+        will end up with
+
+
+      Additionally, for each method of selecting a bingo board, the
+      Collar's regulations SHOULD specifiy:
+
+      * what information, if any, a player electing that method MUST
+        reveal in order to successfully call bingo; and
+
+      * what information, if any, the Collar MUST include in eir weekly
+        report for each player electing that method
+
