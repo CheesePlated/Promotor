@@ -30,6 +30,15 @@ NAME+: Coauthors listed below
 The full text of all above mentioned proposals is listed below.
 
 """
+
+EMPTY_REPORT = """
+=================
+PROMOTOR'S REPORT
+=================
+
+The proposal pool is empty.
+"""
+
 LISTING_TEMPLATE = """
 ==========
 ID {id}
@@ -120,9 +129,11 @@ def generate() -> str:
             text = proposal["text"]
         )
         report += listing
+    if not (to_distribute + pool_proposals):
+        report = EMPTY_REPORT
     
     with open(os.path.join("reports", datetime.now(tz=UTC).strftime("%Y-%m-%d %H-%M") + ".txt"), "xt") as f:
-        f.write(report)
+        f.write(report.removeprefix("\n"))
     return(report)
 
 
