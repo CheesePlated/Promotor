@@ -1,0 +1,50 @@
+=================
+PROMOTOR'S REPORT
+=================
+
+I initiate a referendum on each of the following proposals, removing
+them from the proposal pool. For each referendum the vote collector is the
+Assessor, the quorum is 3, the adoption index is that of the associated
+proposal, the voting method is AI-majority, and the valid options are FOR
+and AGAINST. (PRESENT and conditional votes are also both valid options.)
+
+ID         Author         AI     Name                            
+-----------------------------------------------------------------
+9248~      Mischief+      1.0    Over-Optimization is Boring     
+-----------------------------------------------------------------
+                                                                 
+
+The proposal pool contains the following proposals (self-ratifying):
+ID         Author         AI     Name                            
+-----------------------------------------------------------------
+                                                                 
+-----------------------------------------------------------------
+                                                                 
+
+Legend:
+NNNN*: Democratic proposal
+NNNN~: Ordinary proposal
+NAME+: Coauthors listed below
+
+The full text of all above mentioned proposals is listed below.
+
+
+==========
+ID 9248
+Over-Optimization is Boring (AI=1.0)
+author: Mischief
+coauthors: Murphy
+
+
+Amend rule 2710 (Genetic Modification) by appending the following paragraph at the end:
+
+      Once per Crop Season, the Land Managor CAN and SHALL by
+      announcement randomly select a type of Crop that was in-season
+      during the previous season, random attribute (Seed Cost or Sell
+      Price), and random value for that attribute (as if the type was
+      being created), and change that attribute of that type to that
+      value. If there is no such type to select, then e SHALL instead
+      announce that fact.
+
+
+
