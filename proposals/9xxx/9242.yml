@@ -1,0 +1,24 @@
+ai: 3.0
+authors:
+- Janet
+- Kate
+id: '9242'
+name: Currency clarification
+text: |
+  Currency clarification (AI=3)
+
+  Amend Rule 2578 ("Fungibility") to read as follows:
+
+  {
+
+  Any two assets within a "fungible" class of assets (syn. "currency")
+  that have the same owner are considered equivalent for the purposes of
+  specification, granting, and transferring. The number of such assets an
+  entity owns is that entity's "balance" of that currency.
+
+  }
+
+
+  [Currently, the rule conflates a class of asset and an individual asset.
+  This fixes that issue and includes the "currency" definition from
+  Mischief's proposal.]

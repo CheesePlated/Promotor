@@ -1,0 +1,39 @@
+ai: 3.0
+authors:
+- Murphy
+- Janet
+- Mischief
+id: '9238'
+name: Make currency current again
+text: |
+  Amend Rule 2578 (Fungibility) by replacing this text:
+
+        A fungible asset is one where
+
+  with this text:
+
+        A fungible asset (syn. "currency") is an asset where
+
+  Amend Rule 2555 (Blots) by replacing "fungible asset" with "currency".
+
+  Amend Rule 2579 (Fee-based Actions) by replacing "fungible asset" with
+  "currency".
+
+  Amend Rule 2690 (Spendies) by replacing "fungible liquid asset" with
+  "currency".
+
+  [Liquid is already the default, per Rule 2577.]
+
+  Amend Rule 2700 (Candles) by replacing "Candles are fixed fungible
+  assets" with "Candles are a fixed currency".
+
+  Amend the rule titled "Pyrite" by replacing the first paragraph with:
+
+        Pyrite is a type of fixed currency, tracked by the Land Managor.
+
+  Amend the rule titled "Hectares" by replacing "fixed asset" with
+  "fixed currency".
+
+  [Non-currency assets: Promises, only fungible if creator and text are
+   also identical; Stamps, only fungible if type is also identical; the
+   Veblen.]

@@ -1,0 +1,21 @@
+ai: 1.0
+authors:
+- oliver.n
+- Mischief
+id: '9237'
+name: Pyrite Fungibility
+text: |
+  If Proposal 9230 (Agoriculture) has not been adopted, this proposal has
+  no effect.
+
+  Amend the rule titled "Pyrite" by replacing the text:
+
+      Pyrite is a type of fixed asset
+
+  with:
+
+      Pyrite is a type of fixed fungible asset
+
+  [Comment: This is presumably the intended use of Pyrite as a currency.
+  Also, it saves the Land Managor the work of tracking each Pyrite
+  individually, especially since there can be thousands of them.]

@@ -1,0 +1,21 @@
+ai: 3.0
+authors:
+- Mischief
+- Janet
+- ais523
+id: '9244'
+name: Concision
+text: |
+  Amend rule 2614 (Eclipse Light) by replacing:
+
+        If there is an Emergency Regulation that has existed for at least
+        a month and the Prime Minister has not Extended the Emergency in
+        the past month, any player CAN, with 7 days notice, cause this
+        rule to repeal all Emergency Regulations.
+
+  with:
+
+        If there is an Emergency Regulation that has existed for at least
+        a month and the Prime Minister has not Extended the Emergency in
+        the past month, any player CAN, with 7 days notice, repeal all
+        Emergency Regulations.

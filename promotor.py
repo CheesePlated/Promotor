@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
-#import json
-import yaml
+from ruamel.yaml import YAML
+from ruamel.yaml.scalarstring import LiteralScalarString
 import argparse
 import os
 from sys import stdin, stderr, exit
@@ -53,6 +53,8 @@ coauthors: {coauthors}
 
 """
 
+yaml = YAML()
+
 def add_proposal() -> None:
     proposal_id = input("ID: ")
     authors = input("authors (,-separated): ").split(",")
@@ -65,7 +67,7 @@ def add_proposal() -> None:
         "authors":  authors,
         "ai":       adoption_index,
         "name":     name,
-        "text":     text
+        "text":     LiteralScalarString(text)
     }
 
     outer = proposal_id[:-3] + "xxx"
@@ -160,7 +162,7 @@ def get_proposals(input_ids: str) -> list[dict]:
             print(f"ERROR: File does not exist: {os.path.abspath(fullpath)}", file=stderr)
             exit(1)
         with open(fullpath, "r") as f:
-            proposal = yaml.load(f, yaml.Loader)
+            proposal = yaml.load(f)
         proposals.append(proposal)
     return proposals
     
