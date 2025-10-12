@@ -1,5 +1,6 @@
-#! python3
-import json
+#! /usr/bin/env python3
+#import json
+import yaml
 import argparse
 import os
 from sys import stdin, stderr, exit
@@ -68,13 +69,12 @@ def add_proposal() -> None:
     }
 
     outer = proposal_id[:-3] + "xxx"
-    middle = proposal_id[:-2] + "xx"
     inner = proposal_id + ".json"
-    fullpath = os.path.join("proposals", outer, middle, inner)
+    fullpath = os.path.join("proposals", outer, inner)
     os.makedirs(os.path.dirname(fullpath), exist_ok=True)
     mode = "w" if os.path.exists(fullpath) else "x"
     with open(fullpath, mode) as f:
-        json.dump(proposal, f)
+        yaml.dump(proposal, f)
 
 def generate() -> str:
     distributions = pt.PrettyTable(
@@ -88,7 +88,8 @@ def generate() -> str:
         distributions.min_width[key] = value
         distributions.max_width[key] = value
     pool = distributions.copy()
-    to_distribute = get_proposals(input("Distribution range: "))
+    distribution_range = input("Distribution range: ") 
+    to_distribute = get_proposals(distribution_range)
     if not to_distribute:
         distributions.add_row([None, None, None, None]) # So the table has some space in between if it's empty
     else:
@@ -100,7 +101,8 @@ def generate() -> str:
         )
     distributions.add_divider()
     distributions.add_row([None, None, None, None]) # Jank so I get the bottom border as well
-    pool_proposals = get_proposals(input("Current pool (no input for empty pool): "))
+    pool_range = input("Current pool (no input for empty pool): ")
+    pool_proposals = get_proposals(pool_range)
     if not pool_proposals:
         pool.add_row([None, None, None, None]) # So the table has some space in between if it's empty
     else:
@@ -132,14 +134,15 @@ def generate() -> str:
     if not (to_distribute + pool_proposals):
         report = EMPTY_REPORT
     
-    with open(os.path.join("reports", datetime.now(tz=UTC).strftime("%Y-%m-%d %H-%M") + ".txt"), "xt") as f:
+    filename = (datetime.now(tz=UTC).strftime("%Y-%m-%d") + f" {distribution_range},{pool_range}").strip(", ") + ".txt"
+    with open(os.path.join("reports", filename), "xt") as f:
         f.write(report.removeprefix("\n"))
     return(report)
 
 
 
 
-def get_proposals(input_ids: str) -> list[str]:
+def get_proposals(input_ids: str) -> list[dict]:
     if not input_ids:
         return []
     if "-" not in input_ids:
@@ -151,13 +154,13 @@ def get_proposals(input_ids: str) -> list[str]:
     for proposal_id in ids:
         outer = proposal_id[:-3] + "xxx"
         middle = proposal_id[:-2] + "xx"
-        inner = proposal_id + ".json"
+        inner = proposal_id + ".yml"
         fullpath = os.path.join("proposals", outer, middle, inner)
         if not os.path.exists(fullpath):
             print(f"ERROR: File does not exist: {os.path.abspath(fullpath)}", file=stderr)
             exit(1)
         with open(fullpath, "r") as f:
-            proposal = json.load(f, )
+            proposal = yaml.load(f, yaml.Loader)
         proposals.append(proposal)
     return proposals
     
