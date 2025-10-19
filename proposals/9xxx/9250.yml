@@ -1,0 +1,40 @@
+id: '9250'
+authors:
+- Janet
+- qenya
+ai: 3.0
+name: Re-fee
+text: |
+  Amend Rule 2579 by, as a single amendment (failing as a whole if any
+  step fails):
+
+  * Replacing the paragraph beginning "To use a fee-based method" with the
+  following paragraph:
+
+  {
+
+  To use a fee-based method, an entity (the Actor) who is otherwise
+  permitted to perform the action must announce that e is performing that
+  action; such announcement must set forth intent to pay a fee for the
+  sole purpose of using that method to perform that action. Additionally,
+  such an announcement must either specify the correct set of assets for
+  that fee or use simplified wording (e.g. "I buy X") that makes the
+  intended fee reasonably clear and unambiguous (in particular, without
+  stating an incorrect fee).
+
+  }
+
+  * Replacing the text "If the Rules specify a recipient for the fee, and
+  the Actor CAN transfer that specified fee from emself to the recipient"
+  with the text "If the Rules specify a recipient for the relevant fee,
+  and the Actor CAN transfer that fee from emself to the recipient"
+
+  * Replacing "and the Actor CAN destroy the specified fee in eir
+  possession" with "and the Actor CAN destroy the relevant fee in eir
+  possession".
+
+
+  [More closely mirror the "by announcement" standard, remove the crime
+  (instead simply making the attempt ineffective), and fix a bug:
+  references to the "specified fee" later in the rule are now wrong, since
+  the fee is not always specified.]

@@ -1,0 +1,100 @@
+=================
+PROMOTOR'S REPORT
+=================
+
+The proposal pool contains the following proposals (self-ratifying):
+ID         Author         AI     Name                            
+-----------------------------------------------------------------
+9250*      Janet+         3.0    Re-fee                          
+9251*      Janet          3.0    Regulated simultaneity          
+9252~      Trigon         2.0    Thesis requirements             
+-----------------------------------------------------------------
+                                                                 
+
+Legend:
+NNNN*: Democratic proposal
+NNNN~: Ordinary proposal
+NAME+: Coauthors listed below
+
+The full text of all above mentioned proposals is listed below.
+
+
+==========
+ID 9250
+Re-fee (AI=3.0)
+author: Janet
+coauthors: qenya
+
+
+Amend Rule 2579 by, as a single amendment (failing as a whole if any
+step fails):
+
+* Replacing the paragraph beginning "To use a fee-based method" with the
+following paragraph:
+
+{
+
+To use a fee-based method, an entity (the Actor) who is otherwise
+permitted to perform the action must announce that e is performing that
+action; such announcement must set forth intent to pay a fee for the
+sole purpose of using that method to perform that action. Additionally,
+such an announcement must either specify the correct set of assets for
+that fee or use simplified wording (e.g. "I buy X") that makes the
+intended fee reasonably clear and unambiguous (in particular, without
+stating an incorrect fee).
+
+}
+
+* Replacing the text "If the Rules specify a recipient for the fee, and
+the Actor CAN transfer that specified fee from emself to the recipient"
+with the text "If the Rules specify a recipient for the relevant fee,
+and the Actor CAN transfer that fee from emself to the recipient"
+
+* Replacing "and the Actor CAN destroy the specified fee in eir
+possession" with "and the Actor CAN destroy the relevant fee in eir
+possession".
+
+
+[More closely mirror the "by announcement" standard, remove the crime
+(instead simply making the attempt ineffective), and fix a bug:
+references to the "specified fee" later in the rule are now wrong, since
+the fee is not always specified.]
+
+
+
+
+==========
+ID 9251
+Regulated simultaneity (AI=3.0)
+author: Janet
+coauthors: 
+
+
+Amend Rule 478 by replacing the text "Allowing actions performed by
+sending a message to take place simultaneously" with the text "Allowing
+regulated actions performed by sending a message to take place
+simultaneously".
+
+[Clarify an old wording ambiguity that ais523 pointed out that
+potentially makes this restriction overbroad.]
+
+
+
+
+==========
+ID 9252
+Thesis requirements (AI=2.0)
+author: Trigon
+coauthors: 
+
+
+To rule 1367 "Degrees", add a paragraph before the one beginning "Degrees SHOULD be awarded" which reads:
+
+===
+The Herald is ENCOURAGED to enact administrative regulations including specific guidelines on how to submit theses, a detailed description of the peer-review process, and specific qualifications for degrees in general and for specific degrees.
+===
+
+Comment: This comes from a discussion on Discord in which several people, both established players and newer Agorans, expressed discontentment with how requirements to submit a thesis for a degree are communicated to players. Although Administrative Regulations have a visibility problem, this is at least one way to help with that.
+
+
+

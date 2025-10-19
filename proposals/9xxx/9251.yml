@@ -1,0 +1,13 @@
+id: '9251'
+authors:
+- Janet
+ai: 3.0
+name: Regulated simultaneity
+text: |
+  Amend Rule 478 by replacing the text "Allowing actions performed by
+  sending a message to take place simultaneously" with the text "Allowing
+  regulated actions performed by sending a message to take place
+  simultaneously".
+
+  [Clarify an old wording ambiguity that ais523 pointed out that
+  potentially makes this restriction overbroad.]

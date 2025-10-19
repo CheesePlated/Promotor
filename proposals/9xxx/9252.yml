@@ -1,0 +1,13 @@
+id: '9252'
+authors:
+- Trigon
+ai: 2.0
+name: Thesis requirements
+text: |
+  To rule 1367 "Degrees", add a paragraph before the one beginning "Degrees SHOULD be awarded" which reads:
+
+  ===
+  The Herald is ENCOURAGED to enact administrative regulations including specific guidelines on how to submit theses, a detailed description of the peer-review process, and specific qualifications for degrees in general and for specific degrees.
+  ===
+
+  Comment: This comes from a discussion on Discord in which several people, both established players and newer Agorans, expressed discontentment with how requirements to submit a thesis for a degree are communicated to players. Although Administrative Regulations have a visibility problem, this is at least one way to help with that.

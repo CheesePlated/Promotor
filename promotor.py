@@ -7,10 +7,7 @@ from sys import stdin, stderr, exit
 import prettytable as pt
 from datetime import datetime, UTC
 
-MAIN_TEMPLATE = """
-=================
-PROMOTOR'S REPORT
-=================
+DISTRIBUTION_TEMPLATE= """
 
 I initiate a referendum on each of the following proposals, removing
 them from the proposal pool. For each referendum the vote collector is the
@@ -20,6 +17,13 @@ and AGAINST. (PRESENT and conditional votes are also both valid options.)
 
 {distributions}
 
+"""
+
+MAIN_TEMPLATE = """
+=================
+PROMOTOR'S REPORT
+=================
+{distribution}
 The proposal pool contains the following proposals (self-ratifying):
 {pool}
 
@@ -71,7 +75,7 @@ def add_proposal() -> None:
     }
 
     outer = proposal_id[:-3] + "xxx"
-    inner = proposal_id + ".json"
+    inner = proposal_id + ".yml"
     fullpath = os.path.join("proposals", outer, inner)
     os.makedirs(os.path.dirname(fullpath), exist_ok=True)
     mode = "w" if os.path.exists(fullpath) else "x"
@@ -121,8 +125,9 @@ def generate() -> str:
     formatted_pool = "\n".join(line[2:] for line in pool.get_string().splitlines()) # Get rid of the extra space at the start, it annoys me
 
     # Table black magic done, now the rest
+    distribution_text = DISTRIBUTION_TEMPLATE.format(distributions=formatted_distributions) if distribution_range else ""
     quorum = input("Enter the quorum: ")
-    report = MAIN_TEMPLATE.format(quorum=quorum, distributions=formatted_distributions, pool=formatted_pool)
+    report = MAIN_TEMPLATE.format(quorum=quorum, distribution=distribution_text, pool=formatted_pool)
     for proposal in to_distribute + pool_proposals:
         listing = LISTING_TEMPLATE.format(
             id = proposal["id"],
@@ -155,9 +160,8 @@ def get_proposals(input_ids: str) -> list[dict]:
     proposals = []
     for proposal_id in ids:
         outer = proposal_id[:-3] + "xxx"
-        middle = proposal_id[:-2] + "xx"
         inner = proposal_id + ".yml"
-        fullpath = os.path.join("proposals", outer, middle, inner)
+        fullpath = os.path.join("proposals", outer, inner)
         if not os.path.exists(fullpath):
             print(f"ERROR: File does not exist: {os.path.abspath(fullpath)}", file=stderr)
             exit(1)
