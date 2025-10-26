@@ -1,0 +1,301 @@
+=================
+PROMOTOR'S REPORT
+=================
+
+
+I initiate a referendum on each of the following proposals, removing
+them from the proposal pool. For each referendum the vote collector is the
+Assessor, the quorum is 3, the adoption index is that of the associated
+proposal, the voting method is AI-majority, and the valid options are FOR
+and AGAINST. (PRESENT and conditional votes are also both valid options.)
+
+ID         Author         AI     Name                            
+-----------------------------------------------------------------
+9250*      Janet+         3.0    Re-fee                          
+9251*      Janet          3.0    Regulated simultaneity          
+9252~      Trigon         2.0    Thesis requirements             
+9253~      snail          1.0    The Tower                       
+-----------------------------------------------------------------
+                                                                 
+
+
+The proposal pool contains the following proposals (self-ratifying):
+ID         Author         AI     Name                            
+-----------------------------------------------------------------
+9254*      Janet+         3.0    Administrative Publication Act  
+9255*      Janet          3.0    It's personal                   
+9256~      Murphy         1.0    No more apathetic apathy        
+-----------------------------------------------------------------
+                                                                 
+
+Legend:
+NNNN*: Democratic proposal
+NNNN~: Ordinary proposal
+NAME+: Coauthors listed below
+
+The full text of all above mentioned proposals is listed below.
+
+
+==========
+ID 9250
+Re-fee (AI=3.0)
+author: Janet
+coauthors: qenya
+
+
+Amend Rule 2579 by, as a single amendment (failing as a whole if any
+step fails):
+
+* Replacing the paragraph beginning "To use a fee-based method" with the
+following paragraph:
+
+{
+
+To use a fee-based method, an entity (the Actor) who is otherwise
+permitted to perform the action must announce that e is performing that
+action; such announcement must clearly and unambiguously set forth
+intent to pay a fee for the sole purpose of using that method to perform
+that action. Additionally, such announcement must either clearly and
+unambiguously specify the correct set of assets for that fee or use
+simplified wording (e.g. "I buy X") that makes the intended fee
+reasonably clear and unambiguous (in particular, without stating an
+incorrect fee).
+
+}
+
+* Replacing the text "If the Rules specify a recipient for the fee, and
+the Actor CAN transfer that specified fee from emself to the recipient"
+with the text "If the Rules specify a recipient for the relevant fee,
+and the Actor CAN transfer that fee from emself to the recipient"
+
+* Replacing "and the Actor CAN destroy the specified fee in eir
+possession" with "and the Actor CAN destroy the relevant fee in eir
+possession".
+
+
+[More closely mirror the "by announcement" standard, remove the crime
+(instead simply making the attempt ineffective), and fix a bug:
+references to the "specified fee" later in the rule are now wrong, since
+the fee is not always specified. This second version also adds missing
+clarity requirements.]
+
+
+
+
+==========
+ID 9251
+Regulated simultaneity (AI=3.0)
+author: Janet
+coauthors: 
+
+
+Amend Rule 478 by replacing the text "Allowing actions performed by
+sending a message to take place simultaneously" with the text "Allowing
+regulated actions performed by sending a message to take place
+simultaneously".
+
+[Clarify an old wording ambiguity that ais523 pointed out that
+potentially makes this restriction overbroad.]
+
+
+
+
+==========
+ID 9252
+Thesis requirements (AI=2.0)
+author: Trigon
+coauthors: 
+
+
+To rule 1367 "Degrees", add a paragraph before the one beginning "Degrees SHOULD be awarded" which reads:
+
+===
+The Herald is ENCOURAGED to enact administrative regulations including specific guidelines on how to submit theses, a detailed description of the peer-review process, and specific qualifications for degrees in general and for specific degrees.
+===
+
+Comment: This comes from a discussion on Discord in which several people, both established players and newer Agorans, expressed discontentment with how requirements to submit a thesis for a degree are communicated to players. Although Administrative Regulations have a visibility problem, this is at least one way to help with that.
+
+
+
+
+==========
+ID 9253
+The Tower (AI=1.0)
+author: snail
+coauthors: 
+
+
+Enact a new Rule with a power of 1, the title "A Seed", and the following
+text:
+
+{{{
+In the center of Agora, there is a tower. But it has not yet been completed.
+
+A seed at its base begs for the nourishment it requires: pyrite.
+
+An integer switch this seed does possess, its "magical essence", with a
+default of 0 and a maximum of 100. When it reaches this maximum, the seed
+will grow.
+
+Each player can, by paying a fee of 100 pyrite, feed the tower, which
+increases the seed's magical essence by 1.
+
+And when the seed grows, as fate demands, this Rule takes effect, by
+enacting a new Rule, with title "The Tower", a power of 1, and 4 paragraphs
+of text provided by the greatest architects, and it should be looked upon
+with AWE.
+
+The greatest architects are those persons which have fed the tower the most
+times, and also provided a paragraph. The architect in first supplies the
+first paragraph, specifying its text by announcement. E NEED NOT specify
+that it is the first paragraph, merely that it is a paragraph meant to be
+engraved on the tower's walls. The same is true for the architect in second
+and the second paragraph, the third and the third, the fourth and the
+fourth.
+
+In the event of a tie, should such a conflict arise, the tie will be broken
+with the person possessing more radiance being greater, and if conflict
+still, greater in pyrite, then in time since each last registered.
+
+If 4 paragraphs cannot be determined, a grave outcome indeed, then each
+paragraph that can be determined is included instead of all 4 in balance,
+and the tower SHOULD be looked upon with MUCH FEAR.
+
+It would be wise to engrave words of power on the tower, for it will be the
+source of all magic in Agora. Interlopers may seek to change the engravings
+after its construction, but doing so is ILL-ADVISED, and may result in dark
+forces being unleashed on the perpetrators.
+
+And when fate has come to pass, after the seed has grown, and the tower
+demands to be looked on with AWE or FEAR, only then will this rule take
+effect to repeal itself, and the age of magic will be upon Agora, for
+BETTER or WORSE.
+}}}
+
+
+
+
+==========
+ID 9254
+Administrative Publication Act (AI=3.0)
+author: Janet
+coauthors: kiako
+
+
+Amend Rule 2651 ("The Election Cycle") by, as a single amendment
+(failing as a whole if any step fails):
+
+* Replacing "the ADoP CAN and SHALL publish a Notice of Election" with
+"the ADoP CAN by announcement and SHALL issue a Notice of Election".
+
+* Replacing "Such a notice initiates" with "Doing so initiates".
+
+* Replacing "if there are fewer than 2 term-limited offices, the ADoP
+MUST instead list all of them" with "or, if there are fewer than 2 such
+offices, all of them".
+
+[The last part is a drive-by fix.]
+
+
+Amend Rule 2555 ("Blots") by replacing "Once a quarter, the Referee CAN
+(and SHALL during its first Eastman week) publish a Notice of Clemency"
+with "Once per quarter, the Referee CAN by announcement (and SHALL
+during its first Eastman week) issue a Notice of Clemency".
+
+Amend Rule 2656 ("Radiance") by replacing "Once a quarter, the
+Illuminator CAN (and SHALL during its first Eastman week) publish a
+Notice of Diminution" with "Once per quarter, the Illuminator CAN by
+announcement (and SHALL during its first Eastman week) issue a Notice of
+Diminution".
+
+[I have always been annoyed by using "CAN publish" as an attempt to
+authorize an action. To "publish" is already defined, and we have a
+perfectly method for actions taken by sending a message: "by
+announcement". I would argue "This is a Notice of X." continues to work
+under this standard, since one no longer has to explicitly announce that
+e performs a "by announcement" action in order to take it, and saying
+that clearly sets forth intent to take the action of "issuing" the Notice.]
+
+
+If, immediately prior to this proposal taking effect (and under the
+ruleset then in effect), the ADoP had published a Notice of Election in
+the current quarter, any duty for em to issue a Notice of Election in
+the current quarter is discharged.
+
+If, immediately prior to this proposal taking effect (and under the
+ruleset then in effect), the Referee had published a Notice of
+Clemency in the current quarter, any duty for em to issue a Notice of
+Clemency in the current quarter is discharged.
+
+If, immediately prior to this proposal taking effect (and under the
+ruleset then in effect), the Illuminator had published a Notice of
+Diminution in the current quarter, any duty for em to issue a Notice of
+Diminution in the current quarter is discharged.
+
+[Clarify that this proposal does not impose any additional duties in the
+current quarter.]
+
+
+Amend Rule 869 ("How to Join and Leave Agora") by replacing the text "by
+publishing a message that indicates reasonably clearly" with "by sending
+a public message that indicates reasonably clearly".
+
+[The "message" part of this requirement is already included in the
+definition of "publish".]
+
+
+Amend Rule 2463 ("Motion of No Confidence") to read as follows:
+
+{
+
+Any player CAN, with Agoran consent, cause the office of Prime Minister
+to become vacant, provided that the message in which e does so contains
+the string "MOTION OF NO CONFIDENCE" in its subject line. Motions of no
+confidence SHOULD be used whenever Agorans want to shake things up,
+rather than as a personal judgement of the Prime Minister.
+
+}
+
+[Remove the double method ("with Agoran consent" and "by publishing
+[...]") by phrasing it as a condition instead. Also, fix a typo
+("missing "be" after "SHOULD").]
+
+
+
+
+==========
+ID 9255
+It's personal (AI=3.0)
+author: Janet
+coauthors: 
+
+
+Amend Rule 2556 ("Penalties") by replacing the text "voting strength of
+a player" with the text "voting strength of a person".
+
+[Fix a bug discovered during Agoran't that lets a person dodge a
+Blot-based voting strength penalty by deregistering.]
+
+
+
+
+==========
+ID 9256
+No more apathetic apathy (AI=1.0)
+author: Murphy
+coauthors: 
+
+
+Amend Rule 2465 (Victory by Apathy) by appending this text:
+
+      Announcing intent to Declare Apathy is the Class 5 Infraction of
+      Goldbricking, but this infraction is automatically forgiven if its
+      sponsor successfully Declares Apathy on the basis of that intent,
+      and SHOULD be forgiven if its sponsor demonstrates that e
+      reasonably expected to be able to do so (e.g. by exploiting a bug
+      in the rules governing tabled actions, or privately bribing
+      players not specified to win, but not simply by announcing intent
+      and hoping that no other players checked e-mail for a few days).
+
+
+

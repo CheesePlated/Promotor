@@ -1,0 +1,11 @@
+id: '9255'
+authors:
+- Janet
+ai: 3.0
+name: It's personal
+text: |
+  Amend Rule 2556 ("Penalties") by replacing the text "voting strength of
+  a player" with the text "voting strength of a person".
+
+  [Fix a bug discovered during Agoran't that lets a person dodge a
+  Blot-based voting strength penalty by deregistering.]

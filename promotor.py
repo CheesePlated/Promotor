@@ -125,9 +125,9 @@ def generate() -> str:
     formatted_pool = "\n".join(line[2:] for line in pool.get_string().splitlines()) # Get rid of the extra space at the start, it annoys me
 
     # Table black magic done, now the rest
-    distribution_text = DISTRIBUTION_TEMPLATE.format(distributions=formatted_distributions) if distribution_range else ""
     quorum = input("Enter the quorum: ")
-    report = MAIN_TEMPLATE.format(quorum=quorum, distribution=distribution_text, pool=formatted_pool)
+    distribution_text = DISTRIBUTION_TEMPLATE.format(quorum=quorum, distributions=formatted_distributions) if distribution_range else ""
+    report = MAIN_TEMPLATE.format(distribution=distribution_text, pool=formatted_pool)
     for proposal in to_distribute + pool_proposals:
         listing = LISTING_TEMPLATE.format(
             id = proposal["id"],
