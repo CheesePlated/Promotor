@@ -124,12 +124,13 @@ def generate() -> str:
     last_id = first_id + len(to_distribute) - 1
     distribution_range = f"{first_id}-{last_id}"
 
-    for proposal, pid in zip(proposals, range(first_id, last_id + 1)):
+    for proposal, pid in zip(to_distribute, range(first_id, last_id + 1)):
         dest = open(os.path.join("proposals", str(pid)[:-3] + "xxx", f"{pid}.yml"), "x")
         srcpath = os.path.join("pool", f"{proposal["number"]}.yml")
         src = open(srcpath)
-        data: dict = yaml.load(src)
-        data["id"] = str(pid)
+        data = yaml.load(src)
+        data.insert(2, "id", str(pid))
+        proposal["id"] = str(pid)
         yaml.dump(data, dest)
         src.close()
         dest.close()
@@ -147,7 +148,7 @@ def generate() -> str:
     distributions.add_divider()
     distributions.add_row([None, None, None, None]) # Jank so I get the bottom border as well
     if not pool_proposals:
-        pool.add_row([None, None, None, None]) # So the table has some space in between if it's empty
+        pool.add_row([None, None, None]) # So the table has some space in between if it's empty
     else:
         pool.add_rows(
             list([
@@ -156,7 +157,7 @@ def generate() -> str:
              proposal["name"]] for proposal in pool_proposals)
         )
     pool.add_divider()
-    pool.add_row([None, None, None, None])
+    pool.add_row([None, None, None])
 
     formatted_distributions = "\n".join(line[2:] for line in distributions.get_string().splitlines()) # Get rid of the extra space at the start, it annoys me
     formatted_pool = "\n".join(line[2:] for line in pool.get_string().splitlines()) # Get rid of the extra space at the start, it annoys me
@@ -180,7 +181,7 @@ def generate() -> str:
             name = proposal["name"],
             ai = proposal["ai"],
             author = proposal["authors"][0],
-            coauthors = ", ".join(proposal["authoes"][1:]),
+            coauthors = ", ".join(proposal["authors"][1:]),
             text = proposal["text"]
         )
         report += listing
@@ -219,7 +220,7 @@ def select_proposals(proposals: list[dict], selector: str) -> tuple[list[dict], 
     else:
         d = -1
         for i, proposal in enumerate(proposals):
-            if proposal["number"] == selector:
+            if proposal["number"] == int(selector):
                 d = i
                 break
         pool = proposals
@@ -238,7 +239,7 @@ def main() -> None:
         add_proposal()
     elif args.command in ["generate", "g"]:
         print(generate())
-    
+ 
 
 if __name__ == "__main__":
     main()
