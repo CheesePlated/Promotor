@@ -32,8 +32,7 @@ NNNN*: Democratic proposal
 NNNN~: Ordinary proposal
 NAME+: Coauthors listed below
 
-The full text of all above mentioned proposals is listed below.
-
+The full text of all above mentioned proposal(s) is listed below. Where the information shown below differs from the information shown above, the information shown above shall control.
 """
 
 EMPTY_REPORT = """
@@ -44,9 +43,20 @@ PROMOTOR'S REPORT
 The proposal pool is empty.
 """
 
-LISTING_TEMPLATE = """
+LISTING_TEMPLATE_POOL = """
 ==========
-ID {id}
+{name} (AI={ai})
+author: {author}
+coauthors: {coauthors}
+
+
+{text}
+
+
+"""
+
+LISTING_TEMPLATE_DISTRIBUED = """
+==========
 {name} (AI={ai})
 author: {author}
 coauthors: {coauthors}
@@ -59,27 +69,36 @@ coauthors: {coauthors}
 
 yaml = YAML()
 
+def first_missing(numbers: list[int]) -> int:
+    for i in range(max(numbers)):
+        if i not in numbers:
+            return i
+    return max(numbers) + 1
+
+def highest_id() -> int:
+    to_num = lambda x: lambda y: int(y[:-x])
+    middle = str(max(map(to_num(3), os.listdir("proposals")))) + "xxx"
+    proposal = max(map(to_num(4), os.listdir(os.path.join("proposals", middle))))
+    return proposal
+
 def add_proposal() -> None:
-    proposal_id = input("ID: ")
+    name = input("Title: ")
     authors = input("authors (,-separated): ").split(",")
     adoption_index = float(input("AI: "))
-    name = input("Name: ")
     print("Text:")
     text = "".join(stdin.readlines())
     proposal = {
-        "id":       proposal_id,
         "authors":  authors,
         "ai":       adoption_index,
         "name":     name,
         "text":     LiteralScalarString(text)
     }
 
-    outer = proposal_id[:-3] + "xxx"
-    inner = proposal_id + ".yml"
-    fullpath = os.path.join("proposals", outer, inner)
-    os.makedirs(os.path.dirname(fullpath), exist_ok=True)
-    mode = "w" if os.path.exists(fullpath) else "x"
-    with open(fullpath, mode) as f:
+    pool_numbers = list(map(lambda x: int(x[:-4]), os.listdir("pool")))
+    new_number = first_missing(pool_numbers)
+
+    fullpath = os.path.join("pool", str(new_number) + ".yml")
+    with open(fullpath, "x") as f:
         yaml.dump(proposal, f)
 
 def generate() -> str:
@@ -94,8 +113,28 @@ def generate() -> str:
         distributions.min_width[key] = value
         distributions.max_width[key] = value
     pool = distributions.copy()
-    distribution_range = input("Distribution range: ") 
-    to_distribute = get_proposals(distribution_range)
+    pool.del_column("ID")
+
+    proposals = get_pool()
+    for proposal in proposals:
+        print(proposal["number"], proposal["name"])
+    to_distribute, pool_proposals = select_proposals(proposals, input("Proposals to distribute: "))
+
+    first_id = highest_id() + 1
+    last_id = first_id + len(to_distribute) - 1
+    distribution_range = f"{first_id}-{last_id}"
+
+    for proposal, pid in zip(proposals, range(first_id, last_id + 1)):
+        dest = open(os.path.join("proposals", str(pid)[:-3] + "xxx", f"{pid}.yml"), "x")
+        srcpath = os.path.join("pool", f"{proposal["number"]}.yml")
+        src = open(srcpath)
+        data: dict = yaml.load(src)
+        data["id"] = str(pid)
+        yaml.dump(data, dest)
+        src.close()
+        dest.close()
+        os.remove(srcpath)
+
     if not to_distribute:
         distributions.add_row([None, None, None, None]) # So the table has some space in between if it's empty
     else:
@@ -107,13 +146,11 @@ def generate() -> str:
         )
     distributions.add_divider()
     distributions.add_row([None, None, None, None]) # Jank so I get the bottom border as well
-    pool_range = input("Current pool (no input for empty pool): ")
-    pool_proposals = get_proposals(pool_range)
     if not pool_proposals:
         pool.add_row([None, None, None, None]) # So the table has some space in between if it's empty
     else:
         pool.add_rows(
-            list([proposal["id"] + ("~" if proposal["ai"] < 3 else "*"),
+            list([
              proposal["authors"][0] + ("+" if len(proposal["authors"]) > 1 else ""),
              proposal["ai"],
              proposal["name"]] for proposal in pool_proposals)
@@ -126,10 +163,10 @@ def generate() -> str:
 
     # Table black magic done, now the rest
     quorum = input("Enter the quorum: ")
-    distribution_text = DISTRIBUTION_TEMPLATE.format(quorum=quorum, distributions=formatted_distributions) if distribution_range else ""
+    distribution_text = DISTRIBUTION_TEMPLATE.format(quorum=quorum, distributions=formatted_distributions) if to_distribute else ""
     report = MAIN_TEMPLATE.format(distribution=distribution_text, pool=formatted_pool)
-    for proposal in to_distribute + pool_proposals:
-        listing = LISTING_TEMPLATE.format(
+    for proposal in to_distribute:
+        listing = LISTING_TEMPLATE_DISTRIBUED.format(
             id = proposal["id"],
             name = proposal["name"],
             ai = proposal["ai"],
@@ -138,10 +175,19 @@ def generate() -> str:
             text = proposal["text"]
         )
         report += listing
+    for proposal in pool_proposals:
+        listing = LISTING_TEMPLATE_POOL.format(
+            name = proposal["name"],
+            ai = proposal["ai"],
+            author = proposal["authors"][0],
+            coauthors = ", ".join(proposal["authoes"][1:]),
+            text = proposal["text"]
+        )
+        report += listing
     if not (to_distribute + pool_proposals):
         report = EMPTY_REPORT
     
-    filename = (datetime.now(tz=UTC).strftime("%Y-%m-%d") + f" {distribution_range},{pool_range}").strip(", ") + ".txt"
+    filename = (datetime.now(tz=UTC).strftime("%Y-%m-%d") + f" {distribution_range}").strip() + ".txt"
     with open(os.path.join("reports", filename), "xt") as f:
         f.write(report.removeprefix("\n"))
     return(report)
@@ -149,31 +195,43 @@ def generate() -> str:
 
 
 
-def get_proposals(input_ids: str) -> list[dict]:
-    if not input_ids:
-        return []
-    if "-" not in input_ids:
-        ids =  [input_ids]
-    else:
-        start, end = input_ids.split("-")
-        ids = [str(i) for i in range(int(start), int(end) + 1)]
+def get_pool() -> list[dict]:
     proposals = []
-    for proposal_id in ids:
-        outer = proposal_id[:-3] + "xxx"
-        inner = proposal_id + ".yml"
-        fullpath = os.path.join("proposals", outer, inner)
-        if not os.path.exists(fullpath):
-            print(f"ERROR: File does not exist: {os.path.abspath(fullpath)}", file=stderr)
-            exit(1)
+    filenames = os.listdir("pool")
+    for name in filenames:
+        fullpath = os.path.join("pool", name)
         with open(fullpath, "r") as f:
             proposal = yaml.load(f)
+        proposal["number"] = int(name[:-4])
         proposals.append(proposal)
     return proposals
     
+def select_proposals(proposals: list[dict], selector: str) -> tuple[list[dict], list[dict]]:
+    dist = []
+    pool = []
+    if "," in selector:
+        for newselector in selector.split(","):
+            dist, pool = select_proposals(proposals, newselector)
+    elif "-" in selector:
+        start, end = selector.split("-")
+        for i in range(int(start), int(end) + 1):
+            dist, pool = select_proposals(proposals, str(i))
+    else:
+        d = -1
+        for i, proposal in enumerate(proposals):
+            if proposal["number"] == selector:
+                d = i
+                break
+        pool = proposals
+        if d != -1:
+            dist = [pool.pop(d)]
+    return dist, pool
+                
+
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    subparsers = parser.add_argument("command", choices=["add", "a", "generate", "g"])
+    parser.add_argument("command", choices=["add", "a", "generate", "g"])
     args = parser.parse_args()
 
     if args.command in ["add", "a"]:
