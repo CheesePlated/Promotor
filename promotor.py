@@ -207,9 +207,8 @@ def get_pool() -> list[dict]:
         proposals.append(proposal)
     return proposals
     
-def select_proposals(pool: list[dict], selector: str, dist = None) -> tuple[list[dict], list[dict]]:
-    if dist is None:
-        dist = []
+def select_proposals(pool: list[dict], selector: str) -> tuple[list[dict], list[dict]]:
+    dist = []
     if "," in selector:
         for newselector in selector.split(","):
             d, pool = select_proposals(pool, newselector)
@@ -243,7 +242,4 @@ def main() -> None:
  
 
 if __name__ == "__main__":
-    #main()
-    generate()
-    #main()
-    generate()
+    main()
