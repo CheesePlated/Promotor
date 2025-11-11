@@ -212,11 +212,15 @@ def select_proposals(proposals: list[dict], selector: str) -> tuple[list[dict], 
     pool = []
     if "," in selector:
         for newselector in selector.split(","):
-            dist, pool = select_proposals(proposals, newselector)
+            d, p = select_proposals(proposals, newselector)
+            dist += d
+            pool += p
     elif "-" in selector:
         start, end = selector.split("-")
         for i in range(int(start), int(end) + 1):
-            dist, pool = select_proposals(proposals, str(i))
+            d, p = select_proposals(proposals, str(i))
+            dist += d
+            pool += p
     else:
         d = -1
         for i, proposal in enumerate(proposals):
@@ -242,4 +246,5 @@ def main() -> None:
  
 
 if __name__ == "__main__":
-    main()
+    #main()
+    generate()

@@ -1,0 +1,288 @@
+=================
+PROMOTOR'S REPORT
+=================
+
+
+I initiate a referendum on each of the following proposals, removing
+them from the proposal pool. For each referendum the vote collector is the
+Assessor, the quorum is 6, the adoption index is that of the associated
+proposal, the voting method is AI-majority, and the valid options are FOR
+and AGAINST. (PRESENT and conditional votes are also both valid options.)
+
+ID         Author         AI     Name                            
+-----------------------------------------------------------------
+9257~      4st+           1.0    Truly Indestructible?           
+9258*      Cosmo          3.0    paragraph swap                  
+9259~      Janet+         1.0    A reasonable limit              
+9260~      Janet          1.0    A reasonable tax                
+-----------------------------------------------------------------
+                                                                 
+
+
+The proposal pool contains the following proposals (self-ratifying):
+Author         AI     Name                            
+------------------------------------------------------
+Cosmo          3.0    paragraph swap                  
+Janet+         1.0    A reasonable limit              
+Janet          1.0    A reasonable tax                
+Janet+         1.0    A reasonable limit              
+Janet          1.0    A reasonable tax                
+Janet          1.0    A reasonable tax                
+------------------------------------------------------
+                                                      
+
+Legend:
+NNNN*: Democratic proposal
+NNNN~: Ordinary proposal
+NAME+: Coauthors listed below
+
+The full text of all above mentioned proposal(s) is listed below. Where the information shown below differs from the information shown above, the information shown above shall control.
+
+==========
+Truly Indestructible? (AI=1.0)
+author: 4st
+coauthors: kiako, Janet
+
+
+Amend Rule 2695 "The Veblen" by appending:
+{
+If the Veblen does not exist, any player CAN,
+by announcement, Become All Powerful. When e
+does so, e wins the game, and the Veblen is
+created in eir possession. A player who wins
+in this fashion SHOULD submit a proposal to
+prevent the destruction from arising again.
+}
+
+
+
+==========
+paragraph swap (AI=3.0)
+author: Cosmo
+coauthors: 
+
+
+Amend Rule 2201 ("Self-Ratification") by replacing
+
+{
+Any person CAN by announcement issue a doubt (syn. claim of
+error), identifying a public document published less than 180 days
+ago and explaining the scope and nature of a perceived error in it
+(or in a statement it attests to).
+      The definition of documents as self-ratifying and the definition
+of documents as self-ratifying attestations are secured at power
+3.
+}
+with
+{
+The definition of documents as self-ratifying and the definition
+of documents as self-ratifying attestations are secured at power
+3.
+
+Any person CAN by announcement issue a doubt (syn. claim of
+error), identifying a public document published less than 180 days
+ago and explaining the scope and nature of a perceived error in it
+(or in a statement it attests to).
+}
+
+[The last paragraph begins with "When this happens, ...", which due to the current order of the paragraphs makes it sound like the actions described in it need to be done when the definitions are secured, not when a doubt is issued.]
+
+
+
+
+==========
+A reasonable limit (AI=1.0)
+author: Janet
+coauthors: ais523
+
+
+Amend Rule 2707 ("Pyrite") by replacing "A player CAN pay a fee of 200
+Pyrite to gain 1 Spendie." with "A player CAN pay a fee of 200 Pyrite to
+gain 1 Spendie, provided that e has gained fewer than 40 Spendies in
+this way during this Agoran month."
+
+[Put a hard cap at 3x normal on spendies per month to prevent
+Agoriculture from completely dominating the game.]
+
+
+
+
+==========
+A reasonable tax (AI=1.0)
+author: Janet
+coauthors: 
+
+
+Enact a new Rule entitled "Land Tax" at power 1 with the following text:
+
+{
+
+At the beginning of each month, the following occur in order:
+
+* Each player's Pyrite balance is reduced to one half of its current
+value (rounded down).
+
+* The Hectare balance of each player with more than 16 Hectares balance
+is reduced to 16 + (X - 16)*3/4 (rounded down), where X is eir current
+Hectare balance.
+
+}
+
+[Add something to counteract the otherwise-unchecked exponential growth.
+This is written to occur automatically at the beginning of each month to
+prevent timing scams.]
+
+
+
+
+==========
+paragraph swap (AI=3.0)
+author: Cosmo
+coauthors: 
+
+
+Amend Rule 2201 ("Self-Ratification") by replacing
+
+{
+Any person CAN by announcement issue a doubt (syn. claim of
+error), identifying a public document published less than 180 days
+ago and explaining the scope and nature of a perceived error in it
+(or in a statement it attests to).
+      The definition of documents as self-ratifying and the definition
+of documents as self-ratifying attestations are secured at power
+3.
+}
+with
+{
+The definition of documents as self-ratifying and the definition
+of documents as self-ratifying attestations are secured at power
+3.
+
+Any person CAN by announcement issue a doubt (syn. claim of
+error), identifying a public document published less than 180 days
+ago and explaining the scope and nature of a perceived error in it
+(or in a statement it attests to).
+}
+
+[The last paragraph begins with "When this happens, ...", which due to the current order of the paragraphs makes it sound like the actions described in it need to be done when the definitions are secured, not when a doubt is issued.]
+
+
+
+
+==========
+A reasonable limit (AI=1.0)
+author: Janet
+coauthors: ais523
+
+
+Amend Rule 2707 ("Pyrite") by replacing "A player CAN pay a fee of 200
+Pyrite to gain 1 Spendie." with "A player CAN pay a fee of 200 Pyrite to
+gain 1 Spendie, provided that e has gained fewer than 40 Spendies in
+this way during this Agoran month."
+
+[Put a hard cap at 3x normal on spendies per month to prevent
+Agoriculture from completely dominating the game.]
+
+
+
+
+==========
+A reasonable tax (AI=1.0)
+author: Janet
+coauthors: 
+
+
+Enact a new Rule entitled "Land Tax" at power 1 with the following text:
+
+{
+
+At the beginning of each month, the following occur in order:
+
+* Each player's Pyrite balance is reduced to one half of its current
+value (rounded down).
+
+* The Hectare balance of each player with more than 16 Hectares balance
+is reduced to 16 + (X - 16)*3/4 (rounded down), where X is eir current
+Hectare balance.
+
+}
+
+[Add something to counteract the otherwise-unchecked exponential growth.
+This is written to occur automatically at the beginning of each month to
+prevent timing scams.]
+
+
+
+
+==========
+A reasonable limit (AI=1.0)
+author: Janet
+coauthors: ais523
+
+
+Amend Rule 2707 ("Pyrite") by replacing "A player CAN pay a fee of 200
+Pyrite to gain 1 Spendie." with "A player CAN pay a fee of 200 Pyrite to
+gain 1 Spendie, provided that e has gained fewer than 40 Spendies in
+this way during this Agoran month."
+
+[Put a hard cap at 3x normal on spendies per month to prevent
+Agoriculture from completely dominating the game.]
+
+
+
+
+==========
+A reasonable tax (AI=1.0)
+author: Janet
+coauthors: 
+
+
+Enact a new Rule entitled "Land Tax" at power 1 with the following text:
+
+{
+
+At the beginning of each month, the following occur in order:
+
+* Each player's Pyrite balance is reduced to one half of its current
+value (rounded down).
+
+* The Hectare balance of each player with more than 16 Hectares balance
+is reduced to 16 + (X - 16)*3/4 (rounded down), where X is eir current
+Hectare balance.
+
+}
+
+[Add something to counteract the otherwise-unchecked exponential growth.
+This is written to occur automatically at the beginning of each month to
+prevent timing scams.]
+
+
+
+
+==========
+A reasonable tax (AI=1.0)
+author: Janet
+coauthors: 
+
+
+Enact a new Rule entitled "Land Tax" at power 1 with the following text:
+
+{
+
+At the beginning of each month, the following occur in order:
+
+* Each player's Pyrite balance is reduced to one half of its current
+value (rounded down).
+
+* The Hectare balance of each player with more than 16 Hectares balance
+is reduced to 16 + (X - 16)*3/4 (rounded down), where X is eir current
+Hectare balance.
+
+}
+
+[Add something to counteract the otherwise-unchecked exponential growth.
+This is written to occur automatically at the beginning of each month to
+prevent timing scams.]
+
+
+

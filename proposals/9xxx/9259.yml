@@ -1,0 +1,14 @@
+authors:
+- Janet
+- ais523
+ai: 1.0
+id: '9259'
+name: A reasonable limit
+text: |
+  Amend Rule 2707 ("Pyrite") by replacing "A player CAN pay a fee of 200
+  Pyrite to gain 1 Spendie." with "A player CAN pay a fee of 200 Pyrite to
+  gain 1 Spendie, provided that e has gained fewer than 40 Spendies in
+  this way during this Agoran month."
+
+  [Put a hard cap at 3x normal on spendies per month to prevent
+  Agoriculture from completely dominating the game.]
