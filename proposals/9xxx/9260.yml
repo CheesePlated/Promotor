@@ -1,0 +1,24 @@
+authors:
+- Janet
+ai: 1.0
+id: '9260'
+name: A reasonable tax
+text: |
+  Enact a new Rule entitled "Land Tax" at power 1 with the following text:
+
+  {
+
+  At the beginning of each month, the following occur in order:
+
+  * Each player's Pyrite balance is reduced to one half of its current
+  value (rounded down).
+
+  * The Hectare balance of each player with more than 16 Hectares balance
+  is reduced to 16 + (X - 16)*3/4 (rounded down), where X is eir current
+  Hectare balance.
+
+  }
+
+  [Add something to counteract the otherwise-unchecked exponential growth.
+  This is written to occur automatically at the beginning of each month to
+  prevent timing scams.]
