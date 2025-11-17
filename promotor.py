@@ -57,6 +57,7 @@ coauthors: {coauthors}
 
 LISTING_TEMPLATE_DISTRIBUED = """
 ==========
+ID {id}
 {name} (AI={ai})
 author: {author}
 coauthors: {coauthors}
@@ -70,7 +71,7 @@ coauthors: {coauthors}
 yaml = YAML()
 
 def first_missing(numbers: list[int]) -> int:
-    for i in range(max(numbers)):
+    for i in range(max(numbers) if numbers else 1):
         if i not in numbers:
             return i
     return max(numbers) + 1

@@ -1,0 +1,20 @@
+authors:
+- Janet
+ai: 3.0
+id: '9264'
+name: Unique assets
+text: |
+  Amend Rule 2576 ("Ownership") by appending the following paragraph:
+
+  {
+
+  When an asset's backing document defines a "unique" asset and such asset
+  does not exist, it is immediately created and deemed to be in abeyance,
+  subject to modification by its backing document.
+
+  }
+
+
+  [We currently use this terminology for the Veblen, and we've used the
+  terminology in the past for stones, so it's probably best to just
+  explicitly state what it means.]

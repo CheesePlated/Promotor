@@ -1,0 +1,49 @@
+authors:
+- Janet
+- ais523
+ai: 1.0
+id: '9262'
+name: Land epochs
+text: |
+  Amend Rule 2709 ("The Growth Cycle") by replacing the paragraph
+  beginning "At the end of each Crop Season" with the following paragraphs:
+
+  {
+
+  When the Fields Wither, all unharvested Crops are lost. For the
+  avoidance of doubt, the previous paragraph notwithstanding, a player
+  CANNOT harvest a Crop planted before the most recent time the Fields
+  Withered.
+
+  At the end of each Crop Season, the Fields Wither.
+
+  }
+
+
+
+  Enact a new Rule at power 1 entitled "Light Overexposure" with the
+  following text:
+
+  {
+
+  When a player wins the game as a result of a correct announcement from a
+  player that eir radiance is 100 or more (correctly specifying the
+  amount), the following happen in order:
+
+  * All Pyrite is destroyed.
+
+  * The Fields Wither.
+
+  * All Hectares are destroyed.
+
+  * Each player is granted 16 Hectares.
+
+  }
+
+
+  If a proposal entitled "Further win indirection" submitted in the 24 hours
+  before this proposal was submitted has been adopted, amend the Rule just
+  enacted by  replacing "When a player wins the game as a result of a
+  correct announcement from a player that eir radiance is 100 or more
+  (correctly specifying the amount)" with "When a player wins the game as
+  a result of Outshining the Sun".

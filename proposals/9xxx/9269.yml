@@ -1,0 +1,16 @@
+authors:
+- 4st
+- Janet
+ai: 3.0
+id: '9269'
+name: Proposal and Referenda Fixes v2
+text: |
+  For each proposal with an unresolved referendum initiated in the past
+  28 days, 4st becomes a co-author if possible.
+
+  Amend Rule 2350 "Proposals" by replacing:
+  "Once a proposal
+  is created, its text, author, and AI cannot be changed."
+  with
+  "Once a proposal
+  is created, its text, author, coauthors, and AI cannot be changed."

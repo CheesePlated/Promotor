@@ -1,0 +1,29 @@
+authors:
+- Janet
+- ais523
+- 4st
+ai: 3.0
+id: '9265'
+name: Somewhat broader decision security
+text: |2
+
+  Amend Rule 107 ("Initiating Agoran Decisions') by replacing the
+  paragraph beginning "The destruction of an Agoran decision" with the
+  following paragraph:
+
+  {
+
+  The destruction of Agoran decisions is secured. An Agoran decision's
+  matter to be decided, voting method, valid options, and vote collector
+  are secured at the power of the Rule authorizing the initiation of such
+  a decision.
+
+  }
+
+
+  ["Causing an Agoran decision to cease to being an Agoran decision" is
+  probably a fancy way of destroying it (since no rule would define it)
+  and thus does not need to be handled separately. (We have no other
+  clause like this in the rules.) We should, however, secure the other
+  attributes defined in this rule. (The voting period is secured earlier
+  in the rule.)]
