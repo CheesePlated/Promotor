@@ -13,7 +13,7 @@ I initiate a referendum on each of the following proposals, removing
 them from the proposal pool. For each referendum the vote collector is the
 Assessor, the quorum is {quorum}, the adoption index is that of the associated
 proposal, the voting method is AI-majority, and the valid options are FOR
-and AGAINST. (PRESENT and conditional votes are also both valid options.)
+and AGAINST. (PRESENT and conditional votes are also both valid votes.)
 
 {distributions}
 

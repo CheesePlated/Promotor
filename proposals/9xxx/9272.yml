@@ -1,0 +1,21 @@
+authors:
+- ais523
+- Janet
+ai: 3.1
+id: '9272'
+name: Secure emergencies
+text: |
+  If the last paragraph of rule 2614 says
+  {{{
+  Rules to the contrary notwithstanding, Emergency Regulations
+  CANNOT be enacted, amended, or repealed except as described in
+  this Rule.
+  }}},
+  change it to
+  {{{
+  Rules to the contrary notwithstanding, Emergency Regulations
+  CANNOT be enacted, amended, or repealed except as described in
+  this Rule, nor can an entity that is not an Emergency Regulation be
+  made to become an Emergency Regulation except as described in this
+  rule.
+  }}}

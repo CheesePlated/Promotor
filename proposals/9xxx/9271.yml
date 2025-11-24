@@ -1,0 +1,40 @@
+authors:
+- Janet
+ai: 3.0
+id: '9271'
+name: Strict typing
+text: |
+  Amend Rule 1688 ("Power") by appending the following paragraph:
+
+  {
+
+  A Rule that designates the creation of an entity of a given type as
+  secured (to a given extent) thereby designates the causing of an entity
+  to have that type as secured (to the same extent). Similarly, a Rule
+  that designates the destruction of an entity of a given type as secured
+  (to a given extent) thereby designates the causing of an entity to cease
+  to have that type as secured (to the same extent).
+
+  }
+
+
+  Amend Rule 1607 ("Distribution") by replacing the paragraph beginning
+  "The destruction of a referendum" with the following paragraph:
+
+  {
+
+  The destruction of a referendum is secured.
+
+  }
+
+
+  Amend Rule 2350 ("Proposals") by replacing "The destruction of a
+  proposal and the causing of a proposal to cease being a proposal are
+  secured." with "The destruction of a proposal is secured.".
+
+
+  [More generically handle security around changing the types of entity.
+  Anything securing the creation of a certain type of entity presumably
+  also wants to regulate something else becoming that type, and similarly
+  anything securing the destruction of a certain type of entity presumably
+  also wants to regulate an entity ceasing to be that type.]
