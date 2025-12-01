@@ -1,0 +1,13 @@
+authors:
+- Janet
+ai: 3.0
+id: '9275'
+name: Determinate determinacy
+text: |
+  Amend Rule 2518 ("Determinacy") by replacing the text "If a value CANNOT
+  be reasonably determined" with the text "If a value cannot be reasonably
+  determined".
+
+  [We almost certainly mean "cannot" here in the natural language sense:
+  determining something (in this sense) is not a regulated action; it
+  requires thought and potentially a judicial process.]
