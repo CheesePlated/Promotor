@@ -1,0 +1,16 @@
+authors:
+- 4st
+- snail
+- Trigon
+- ais523
+- Janet
+ai: 3.0
+id: '9278'
+name: Bring Back Science (fixing the oops)
+text: |
+  Amend Rule 2348 ("Ribbons") by appending another paragraph after the
+  one starting with "Orange (O):" with the text:
+  {
+  Infrared (D): When a player earns an Indigo Ribbon, that player CAN,
+  once by announcement, grant any other person an Infrared Ribbon.
+  }

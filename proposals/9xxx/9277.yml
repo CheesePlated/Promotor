@@ -1,0 +1,19 @@
+authors:
+- 4st
+- snail
+- Trigon
+- ais523
+- Janet
+ai: 3.0
+id: '9277'
+name: Bring Back Yellow
+text: |
+  [persuasion: Instead of inserting subgames into the rules... we have
+  been inserting subgames directly into the rules, and creating the
+  "contests" rule.]
+  Amend Rule 2348 ("Ribbons") by appending another paragraph after the
+  one starting with "Orange (O):" with the text:
+  {
+  Yellow (Y): When a tournament that a player was a gamemaster of ends
+  with a winner, that gamemaster earns a Yellow Ribbon.
+  }
