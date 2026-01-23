@@ -1,0 +1,23 @@
+authors:
+- Janet
+- ais523
+ai: 3.0
+id: '9282'
+number: 0
+name: Initiation specification
+text: |
+  Amend Rule 107 by:
+
+  * Replacing "The publication of such a valid notice initiates the voting
+  period for the decision." with "The initiation of an Agoran decision
+  also initiates the voting period for that decision.".
+
+  * Replacing the text ", and that such a decision was initiated" with the
+  text ", that such a decision was initiated, and that that decision's
+  voting period was initiated".
+
+
+  [Per ais523's judgement in CFJ 4118. We don't need to state the
+  requirement to "publish[] a valid notice" twice for initiating Agoran
+  decisions, and we should always ratify that the voting period was
+  initiated anyway.]

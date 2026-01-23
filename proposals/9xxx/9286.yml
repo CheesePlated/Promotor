@@ -1,0 +1,14 @@
+authors:
+- Murphy
+ai: 1.0
+id: '9286'
+name: Less harsh weather
+text: |
+  Amend Rule 2709 (The Growth Cycle) by replacing this text:
+
+        Good, Neutral, or Bad (each of which has an equal probability).
+
+  with this text:
+
+        Good (probability 30%), Neutral (probability 60%), or Bad
+        (probability 10%).

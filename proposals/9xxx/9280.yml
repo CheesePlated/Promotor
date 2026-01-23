@@ -1,0 +1,29 @@
+authors:
+- Murphy
+- 4st
+ai: 3.0
+id: '9280'
+name: Rounded integer switches
+text: |
+  Amend Rule 2162 (Switches) by replacing this text:
+
+        If an instance of a switch would otherwise fail to have a possible
+        value, it comes to have its default value.
+
+  with this text:
+
+        If an instance of a switch would otherwise fail to have a possible
+        value, and no other method defined by this rule or its backing
+        document would assign it a possible value, then it comes to have
+        its default value.
+
+  and by inserting this paragraph after the
+  paragraph starting with "A boolean switch":
+
+        A rounded switch is a switch defined as such by its backing
+        document. Each type of rounded switch has a granularity (a real
+        number, equal to 1 unless otherwise specified by its backing
+        document). If an instance of a rounded switch would otherwise
+        have a real but impossible value (V), then it comes to have a
+        value of the multiple of its granularity closest to V (breaking
+        ties toward zero, unless its backing document says otherwise).

@@ -32,7 +32,7 @@ NNNN*: Democratic proposal
 NNNN~: Ordinary proposal
 NAME+: Coauthors listed below
 
-The full text of all above mentioned proposal(s) is listed below. Where the information shown below differs from the information shown above, the information shown above shall control.
+The full text of all above mentioned proposals is listed below. Where the information shown below differs from the information shown above, the information shown above shall control.
 """
 
 EMPTY_REPORT = """
@@ -110,9 +110,8 @@ def generate() -> str:
         none_format=" ",
         align="l"
     )
-    for key, value in {"ID":8, "Author":12, "AI":4, "Name":30}.items():     # I like fixed-width tables
+    for key, value in {"ID":8, "Author":12, "AI":4, "Name":30}.items():
         distributions.min_width[key] = value
-        distributions.max_width[key] = value
     pool = distributions.copy()
     pool.del_column("ID")
 
