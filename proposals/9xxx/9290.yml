@@ -1,0 +1,12 @@
+authors:
+- Trigon
+ai: 1.0
+id: '9290'
+name: Welcome Cards
+text: |
+  If the rule 2713 "Scoring Numbers" does not include the text "Whenever a player scores a date" then add the following paragraph to said rule after the paragraph beginning "Whenever a player scores a number":
+  {
+  Whenever a player scores a date, e scores that date in zero-padded MMDD format (for instance, scoring the thirtieth of June would result in scoring the number 0630).
+  }
+
+  Amend Rule 2499 "Welcome Packages" by appending to the final paragraph: "When a player receives a welcome package, e scores the date of eir registration."
