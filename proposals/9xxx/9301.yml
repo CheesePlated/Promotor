@@ -1,0 +1,18 @@
+authors:
+- ais523
+ai: 2.0
+id: '9301'
+name: Impeachment removes
+text: |
+  In rule 2573, change
+  {{{
+  Any player CAN, with 2 Agoran consent, expel (impeach) the holder
+  of a specified voluntary office.
+  }}}
+  to
+  {{{
+  Any player CAN, with 2 Agoran consent, expel (impeach) the holder
+  of a specified voluntary office, causing the office to become vacant.
+  }}}
+  [The current rule may be redefining "impeach"/"expel" to cause an
+  election, which would not cause the office to become vacant.]

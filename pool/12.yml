@@ -1,0 +1,19 @@
+authors:
+- ais523
+ai: 3.0
+name: Cleaner punctuation
+text: |
+  In rule 2221, change "spelling, grammar," to "spelling, grammar,
+  punctuation,".
+
+  In rule 107, if the penultimate paragraph does not end with a full
+  stop, append a full stop to it.
+
+  In rule 2555, in "A person with 1 or more blots is Impure, a
+  person with 0 blots is Pure.", change the comma to a semicolon.
+
+  In rule 2555, if the second paragraph does not end with a full stop,
+  append a full stop to it.
+
+  [Allow cleaning for punctuation, which currently isn't possible. Also
+  contains some fixes for punctuation errors I noticed.]

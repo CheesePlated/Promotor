@@ -1,0 +1,440 @@
+=================
+PROMOTOR'S REPORT
+=================
+
+
+I initiate a referendum on each of the following proposals, removing
+them from the proposal pool. For each referendum the vote collector is the
+Assessor, the quorum is 5, the adoption index is that of the associated
+proposal, the voting method is AI-majority, and the valid options are FOR
+and AGAINST. (PRESENT and conditional votes are also both valid votes.)
+[Note that I have decided to refrain from distributing the 5 most recent proposals as allowed by rule 1607 (Distribution), paragraph 4]
+
+ID         Author(s)      AI     Name                            
+-----------------------------------------------------------------
+9292~      Mischief+      1.0    Fashionable Manners Take II     
+9293~      Janet+         2.0    Infractions are fine, really    
+9294~      Murphy+        2.0    In a timely something           
+9295~      Murphy+        1.0    Overexertion v1.11              
+9296~      Murphy         2.0    Historical gaps                 
+9297~      Mischief       1.5    Whoops                          
+9298~      Mischief       2.0    Daylight Wasting Time           
+9299~      ais523         2.0    Fix Continuity                  
+9300~      ais523         2.0    Fix Election Notices            
+9301~      ais523         2.0    Impeachment removes             
+-----------------------------------------------------------------
+                                                                 
+
+I publish the following listing of the proposal pool along with the attributes and text related to each listed proposal twice, once as last week's Promotor's report and once as this week's.
+The proposal pool contains the following proposals (self-ratifying):
+Author(s)      AI     Name                                
+----------------------------------------------------------
+ais523         1.0    Fix passive SHOULD                  
+Murphy         1.0    Packing list                        
+ais523         3.0    Fix temporary deputisation ISIDTID  
+ais523         3.2    Ratification timing clarification   
+ais523         3.0    Cleaner punctuation                 
+----------------------------------------------------------
+                                                          
+
+Legend:
+NNNN*: Democratic proposal
+NNNN~: Ordinary proposal
+NAME+: Coauthors listed below
+
+The full text of all above mentioned proposals is listed below. Where the information shown below differs from the information shown above, the information shown above shall control.
+
+==========
+ID 9292
+Fashionable Manners Take II (AI=1.0)
+author: Mischief
+coauthors: Trigon
+
+
+Amend rule 2713 (Scoring Numbers) by replacing "timely manner" with "timely fashion"
+
+
+
+
+==========
+ID 9293
+Infractions are fine, really (AI=2.0)
+author: Janet
+coauthors: Cosmo, Mischief
+
+
+Amend Rule 2451 ("Executive Orders") by replacing the list item
+(excluding the preceding hyphen) beginning "Dive (Referee)" with the
+following:
+
+{
+
+Dive (Referee): The Prime Minister grants a specified player two blots.
+Rules to the contrary notwithstanding, the reason for the fine may be
+any grievance held by the Prime Minister, not necessarily a violation of
+the rules, against the person to whom the blots are granted.
+
+}
+
+
+Amend Rule 2531 ("Defendant's Rights") by replacing "it does not include
+the specific reason for the fine" with "it does not describe the
+specific infraction that occurred".
+
+Amend Rule 2450 ("Pledges") by replacing "in determining an appropriate
+fine" with "in determining an appropriate penalty".
+
+
+
+
+==========
+ID 9294
+In a timely something (AI=2.0)
+author: Murphy
+coauthors: Trigon
+
+
+Amend Rule 1023 (Agoran Time) by replacing this text:
+
+      The phrase "in a timely fashion" means "within 7 days".
+
+with this text:
+
+      The phrase "in a timely fashion" (syn. "in a timely manner") means
+      "within 7 days".
+
+
+
+
+==========
+ID 9295
+Overexertion v1.11 (AI=1.0)
+author: Murphy
+coauthors: ais523, Nilrem
+
+
+If Rule 2683 (The Boulder) defines Instability, then amend it by
+replacing "ceiling(S/(P+V))" with "ceiling(S/(P+W))". Otherwise, amend
+it by replacing this text:
+
+      Each player CAN, once a week, by announcement, push the boulder.
+      When a player pushes the Boulder, its Height is increased by 1.
+      At the beginning of each week, if the boulder was pushed in the
+      previous week at least as many times as the Boulder's Slope, then
+      the Boulder's Slope is increased by 1; otherwise, the Boulder's
+      Height is set to 0, and the Boulder's Slope is set to 1. The
+      Absurdor SHOULD list the largest Height and Slope of the Boulder
+      ever reached in eir report.
+
+with this text:
+
+      The Boulder's Instability is an untracked integer switch,
+      defaulting to 0.
+
+      Boulder Waivers are a currency, tracked by the Absurdor. A
+      player CAN pay a fee of one or more Boulder Waivers to affect
+      the Boulder's Instability as described by this rule.
+
+      When the Boulder Falls, all its switches are set to their
+      default values.
+
+      Each player CAN, once a week, by announcement, push the boulder.
+      When a player pushes the Boulder, its Height is increased by 1.
+
+      At the beginning of each week, the Boulder's Instability is set
+      to ceiling(S/(P+W)), where S is its Slope, P is the number of
+      distinct players who pushed it in the previous week, and W is the
+      the number of Boulder Waivers spent in the previous week.
+
+        * If P+W is zero, then the Boulder Falls.
+
+        * Otherwise, during that week, the Absurdor SHALL select and
+          announce a number of random integers from 1 to 10 (inclusive)
+          equal ot the Boulder's Instability. If none of them are 1,
+          then the Boulder's Instability is set to 0.
+
+      At the end of each week, if the Boulder's Instability is greater
+      than zero, then the Boulder Falls.
+
+[Make it possible, though unreliable, for a smaller set of players to
+ push the Boulder up a steeper Slope. Methods and incentives for
+ obtaining Boulder Waivers is left to future proposals, e.g. ais523
+ suggested buying them with Spendies.]
+
+
+
+
+==========
+ID 9296
+Historical gaps (AI=2.0)
+author: Murphy
+coauthors: 
+
+
+Amend Rule 2139 (The Registrar) by replacing this text:
+
+      The Registrar's monthly report includes:
+
+      1. For each former player for which the information is reasonably
+         available, the dates on which e registered and deregistered.
+
+with this text:
+
+      The Registrar's monthly report includes:
+
+      1. For each current or former player for which the information is
+         reasonably available, the dates on which e registered and
+         deregistered.
+
+[Monthly Registrar reports have long included this info for current
+ players anyway, this just formally includes it in the definition.]
+
+
+
+
+==========
+ID 9297
+Whoops (AI=1.5)
+author: Mischief
+coauthors: 
+
+
+Repeal rule 2699 (Contests)
+
+[I should have included this in P9266 ("Repeal Candles"). This switch isn't otherwise used.]
+
+
+
+
+==========
+ID 9298
+Daylight Wasting Time (AI=2.0)
+author: Mischief
+coauthors: 
+
+
+Amend rule 1023 (Agoran Time) by replacing the text reading:
+
+         c. they occur in two consecutive Agoran months on the same day
+            of the month, and the later of the two occurs at the same or
+            earlier time of day.
+
+with:
+
+         c. they occur in two consecutive Agoran months on the same day
+            of the month, and the later of the two occurs at the same or
+            earlier UTC time of day.
+
+[Sidesteps any potential for daylight saving or other local time shenanigans.]
+
+
+
+
+==========
+ID 9299
+Fix Continuity (AI=2.0)
+author: ais523
+coauthors: 
+
+
+In rule 1586, change
+{{{
+entity that had that name when the rule first came to include that
+reference
+}}}
+to
+{{{
+entity that had that name when the rule/contract/regulation first came
+to include that reference
+}}}
+
+[Without the fix, this has a broken reference when a contract or
+regulation refers to an entity by name.]
+
+
+
+
+==========
+ID 9300
+Fix Election Notices (AI=2.0)
+author: ais523
+coauthors: 
+
+
+In rule 2651, change
+{{{
+Once per quarter, the ADoP CAN and SHALL publish a Notice of
+Election specifying between 2-4 term-limited offices (if there
+fewer than 2 term-limited offices, the ADoP MUST instead list all
+them).  Such a notice initiates elections for the specified
+offices.  The ADoP SHOULD prioritize offices that have gone
+longest since their last elections.
+}}}
+to
+{{{
+Once per quarter, the ADoP SHALL publish a document, labeled as a
+Notice of Election, that specifies 2-4 term-limited offices for which
+elections can be initiated (if fewer than 2 such offices exist, the
+notice MAY instead specify all such offices). The first time each
+quarter the ADoP does so, elections are initiated for the specified
+offices.  The ADoP SHOULD prioritize offices that have gone
+longest since their last elections.
+}}}
+
+[The old text is broken in a few ways: "can publish a Notice of X" is a
+bit confusing and IIRC we're moving away from that terminology; it
+isn't clear what happens if the ADoP attempts to do it multiple times;
+and it doesn't handle offices that are term-limited but that cannot
+have elections initiated (e.g. because there's already an ongoing
+election).]
+
+
+
+
+==========
+ID 9301
+Impeachment removes (AI=2.0)
+author: ais523
+coauthors: 
+
+
+In rule 2573, change
+{{{
+Any player CAN, with 2 Agoran consent, expel (impeach) the holder
+of a specified voluntary office.
+}}}
+to
+{{{
+Any player CAN, with 2 Agoran consent, expel (impeach) the holder
+of a specified voluntary office, causing the office to become vacant.
+}}}
+[The current rule may be redefining "impeach"/"expel" to cause an
+election, which would not cause the office to become vacant.]
+
+
+
+
+==========
+Fix passive SHOULD (AI=1.0)
+author: ais523
+coauthors: 
+
+
+In rule 2492, change
+{{{
+If a judge is recused from a case that was continuously open and
+assigned to em for at least the past 4 days, e SHOULD NOT be
+assigned as a judge until e has apologised and/or reasonably
+explained eir actions.
+}}}
+to
+{{{
+If a judge is recused from a case that was continuously open and
+assigned to em for at least the past 4 days, players SHOULD NOT
+assign em as a judge until e has apologised and/or reasonably
+explained eir actions.
+}}}
+
+[With the current wording, if the Arbitor assigns a judge too early, it
+is the judge rather than the Arbitor who has violated the SHOULD, which
+is not what we want. "Players" rather than "the Arbitor" because there
+are some situations where players other than the Arbitor do the
+assignment, e.g. if the Referee is handling a CFJ.]
+
+
+
+
+==========
+Packing list (AI=1.0)
+author: Murphy
+coauthors: 
+
+
+Amend Rule 2499 (Welcome Packages) by replacing this text:
+
+      A player CAN, by announcement, cause a specified player to receive
+      a welcome package (syn. "grant" em a welcome package).
+
+with this text:
+
+      A player CAN, by announcement, cause a specified player to receive
+      a welcome package (syn. "grant" em a welcome package), and SHOULD
+      specify the assets thus gained.
+
+
+
+
+==========
+Fix temporary deputisation ISIDTID (AI=3.0)
+author: ais523
+coauthors: 
+
+
+In rule 2160, change
+{{{
+3) The deputy, when performing the action, announces that e is
+   doing so by deputisation or by temporary deputisation.
+}}}
+to
+{{{
+3) The deputy, when performing the action, announces that e is
+   doing so by deputisation or by temporary deputisation (in the
+   latter case, the deputisation is considered temporary).
+}}}
+
+[The rule allowed you to announce that you were performing temporary
+deputisation but didn't specify any consequences for doing so, meaning
+that AFAICT an announcement of temporary deputisation would actually
+deputise permanently.]
+
+
+
+
+==========
+Ratification timing clarification (AI=3.2)
+author: ais523
+coauthors: 
+
+
+In rule 1551, change
+{{{
+the gamestate is modified to what it would be if
+}}}
+to
+{{{
+the gamestate is modified to what it would currently be if
+}}}
+
+[A possible reading of rule 1551 is that ratification rewinds the
+entire gamestate to the truth time. I think (or at least hope) that
+reading loses the rule 217 tiebreak, but given how important
+ratification is to keeping Agora working, and how problematic it would
+be to have the gamestate randomly rewind, I would like to make this
+unambiguous.]
+
+
+
+
+==========
+Cleaner punctuation (AI=3.0)
+author: ais523
+coauthors: 
+
+
+In rule 2221, change "spelling, grammar," to "spelling, grammar,
+punctuation,".
+
+In rule 107, if the penultimate paragraph does not end with a full
+stop, append a full stop to it.
+
+In rule 2555, in "A person with 1 or more blots is Impure, a
+person with 0 blots is Pure.", change the comma to a semicolon.
+
+In rule 2555, if the second paragraph does not end with a full stop,
+append a full stop to it.
+
+[Allow cleaning for punctuation, which currently isn't possible. Also
+contains some fixes for punctuation errors I noticed.]
+
+
+

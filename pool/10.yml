@@ -1,0 +1,21 @@
+authors:
+- ais523
+ai: 3.0
+name: Fix temporary deputisation ISIDTID
+text: |
+  In rule 2160, change
+  {{{
+  3) The deputy, when performing the action, announces that e is
+     doing so by deputisation or by temporary deputisation.
+  }}}
+  to
+  {{{
+  3) The deputy, when performing the action, announces that e is
+     doing so by deputisation or by temporary deputisation (in the
+     latter case, the deputisation is considered temporary).
+  }}}
+
+  [The rule allowed you to announce that you were performing temporary
+  deputisation but didn't specify any consequences for doing so, meaning
+  that AFAICT an announcement of temporary deputisation would actually
+  deputise permanently.]

@@ -1,0 +1,19 @@
+authors:
+- Mischief
+ai: 2.0
+id: '9298'
+name: Daylight Wasting Time
+text: |
+  Amend rule 1023 (Agoran Time) by replacing the text reading:
+
+           c. they occur in two consecutive Agoran months on the same day
+              of the month, and the later of the two occurs at the same or
+              earlier time of day.
+
+  with:
+
+           c. they occur in two consecutive Agoran months on the same day
+              of the month, and the later of the two occurs at the same or
+              earlier UTC time of day.
+
+  [Sidesteps any potential for daylight saving or other local time shenanigans.]

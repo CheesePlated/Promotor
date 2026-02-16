@@ -1,0 +1,23 @@
+authors:
+- Murphy
+ai: 2.0
+id: '9296'
+name: Historical gaps
+text: |
+  Amend Rule 2139 (The Registrar) by replacing this text:
+
+        The Registrar's monthly report includes:
+
+        1. For each former player for which the information is reasonably
+           available, the dates on which e registered and deregistered.
+
+  with this text:
+
+        The Registrar's monthly report includes:
+
+        1. For each current or former player for which the information is
+           reasonably available, the dates on which e registered and
+           deregistered.
+
+  [Monthly Registrar reports have long included this info for current
+   players anyway, this just formally includes it in the definition.]

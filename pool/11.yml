@@ -1,0 +1,20 @@
+authors:
+- ais523
+ai: 3.2
+name: Ratification timing clarification
+text: |
+  In rule 1551, change
+  {{{
+  the gamestate is modified to what it would be if
+  }}}
+  to
+  {{{
+  the gamestate is modified to what it would currently be if
+  }}}
+
+  [A possible reading of rule 1551 is that ratification rewinds the
+  entire gamestate to the truth time. I think (or at least hope) that
+  reading loses the rule 217 tiebreak, but given how important
+  ratification is to keeping Agora working, and how problematic it would
+  be to have the gamestate randomly rewind, I would like to make this
+  unambiguous.]

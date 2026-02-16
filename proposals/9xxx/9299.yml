@@ -1,0 +1,19 @@
+authors:
+- ais523
+ai: 2.0
+id: '9299'
+name: Fix Continuity
+text: |
+  In rule 1586, change
+  {{{
+  entity that had that name when the rule first came to include that
+  reference
+  }}}
+  to
+  {{{
+  entity that had that name when the rule/contract/regulation first came
+  to include that reference
+  }}}
+
+  [Without the fix, this has a broken reference when a contract or
+  regulation refers to an entity by name.]

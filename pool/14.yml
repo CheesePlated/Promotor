@@ -1,0 +1,15 @@
+authors:
+- Murphy
+ai: 1.0
+name: Packing list
+text: |
+  Amend Rule 2499 (Welcome Packages) by replacing this text:
+
+        A player CAN, by announcement, cause a specified player to receive
+        a welcome package (syn. "grant" em a welcome package).
+
+  with this text:
+
+        A player CAN, by announcement, cause a specified player to receive
+        a welcome package (syn. "grant" em a welcome package), and SHOULD
+        specify the assets thus gained.

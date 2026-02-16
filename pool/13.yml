@@ -1,0 +1,25 @@
+authors:
+- ais523
+ai: 1.0
+name: Fix passive SHOULD
+text: |
+  In rule 2492, change
+  {{{
+  If a judge is recused from a case that was continuously open and
+  assigned to em for at least the past 4 days, e SHOULD NOT be
+  assigned as a judge until e has apologised and/or reasonably
+  explained eir actions.
+  }}}
+  to
+  {{{
+  If a judge is recused from a case that was continuously open and
+  assigned to em for at least the past 4 days, players SHOULD NOT
+  assign em as a judge until e has apologised and/or reasonably
+  explained eir actions.
+  }}}
+
+  [With the current wording, if the Arbitor assigns a judge too early, it
+  is the judge rather than the Arbitor who has violated the SHOULD, which
+  is not what we want. "Players" rather than "the Arbitor" because there
+  are some situations where players other than the Arbitor do the
+  assignment, e.g. if the Referee is handling a CFJ.]
