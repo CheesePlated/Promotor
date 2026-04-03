@@ -1,0 +1,18 @@
+authors:
+- Murphy
+ai: 1.0
+id: '9326'
+name: Money doesn't grow on trees
+text: |
+  Amend Rule 2710 (Genetic Modification) by appending this text to the
+  paragraph containing "create a new type of Crop":
+
+        The Land Managor CAN by announcement rename a type of Crop,
+        specifying its new name, but SHOULD NOT do so unless its current
+        name is reasonably likely to cause confusion and delay.
+
+  and appending this text to the paragraph containing "remove a type of
+  out-of-season Crop":
+
+        This fee is reduced to 1 Pyrite if the type's Sell Price is
+        less than its Seed Cost.

@@ -1,0 +1,17 @@
+authors:
+- Galle
+ai: 2.0
+id: '9325'
+name: Campaign Promises
+text: |
+  Amend the first paragraph of Rule 2630, "The Administrative State", to read as follows:
+  ---
+  Each officer CAN, with 1.5 Agoran consent, enact, amend, or repeal eir own office's Administrative Regulations. Administrative Regulations have the following properties:
+  ---
+
+  Enact a new power 2 rule, entitled "Platforms", with the following text:
+  ---
+  A candidate in an election CAN, with notice, designate a public document as eir Platform for that election. A Platform SHOULD specify changes to the Administrative Regulations for the office being elected.
+
+  When a candidate is elected to an office, if e has a Platform for that election, any changes to that office's Administrative Regulations specified by eir most recent Platform take effect.
+  ---

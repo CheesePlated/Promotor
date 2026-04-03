@@ -1,0 +1,25 @@
+authors:
+- Mischief
+- Murphy
+ai: 3.0
+id: '9314'
+name: No Overpowered Deputies
+text: |
+  [Currently, one can repeatedly deputise for an office that would
+  otherwise make em overpowered. R2160 prevents the deputy from actually
+  taking office in that case, but that doesn't avoid the resulting
+  potential conflict of interest / misuse of official power. (However,
+  I'm leaving that provision in place as additional protection, even
+  though this change probably makes it redundant.)
+
+  Note: this proposal does not conflict with P9305.]
+
+  Amend rule 2160 (Deputisation) by inserting after:
+
+         4) The deputy has not held the office in the past 7 days.
+
+  a new top-level list bullet reading:
+
+         5) The deputy would not be Overpowered if e held the office.
+
+  and then renumbering each of the subsequent top-level list bullets accordingly; that is, the pre-amendment 5), 6), and 7) become 6), 7), and 8), respectively.

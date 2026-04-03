@@ -1,0 +1,28 @@
+authors:
+- Murphy
+- Mischief
+- Trigon
+ai: 2.0
+id: '9319'
+name: Some recommendations
+text: |
+  Amend Rule 991 (Calls for Judgement) by replacing this text:
+
+        The Arbitor SHOULD consider linking
+
+  with this text:
+
+        The Arbitor SHOULD link
+
+  [SHOULD already implies "consider".]
+
+  Amend Rule 2465 (Victory by Apathy) by appending this text:
+
+        A player SHOULD NOT announce intent to Declare Apathy unless e
+        expects it to be reasonably likely to succeed.
+
+  [I previously proposed making failed intents an infraction, but it would
+   require mind-reading, and the Blots would prevent em from benefiting
+   from a successful Apathy if applied too early. Maybe skip the
+   infraction and just define a way to give Blots directly, like Dive,
+   based on consensus that the intent appeared to be a lazy one?]

@@ -1,0 +1,25 @@
+authors:
+- Mischief
+- Trigon
+ai: 1.0
+id: '9324'
+name: Consolation Prize
+text: |
+  reate a rule entitled "Consolation Prize" with power=0.5 and reading:
+
+        The Consolation Prize is a unique untracked indestructible fixed
+        asset with ownership entirely restricted to players and Agora. If
+        the Consolation Prize would otherwise be in abeyance, or if it is
+        owned by the Lost and Found Department, it is immediately
+        transferred to Agora.
+
+        A player may award the Consolation Prize by announcement,
+        specifying another player (the recipient). If e has not
+        previously awarded the Consolation Prize in the current month,
+        then upon such an announcement the Consolation Prize is
+        transferred to the recipient.
+
+
+  The Consolation Prize is transferred to Trigon.
+
+  [This is a much simplified version of the old kudos system from many years back.]

@@ -1,0 +1,16 @@
+authors:
+- Murphy
+- Mischief
+- Trigon
+ai: 1.0
+id: '9320'
+name: Scoring rule numbers
+text: |
+  Amend Rule 2713 (Scoring Numbers) by inserting this text before the
+  paragraph beginning "Whenever a player scores a number":
+
+        Whenever a rule is created by a proposal and subsequently assigned
+        a rule number, or a rule with a rule number is repealed by a
+        proposal, the Assessor SHALL randomly select one player who voted
+        FOR that proposal to score its rule number, unless 12 or more rule
+        numbers were scored earlier in the same week.

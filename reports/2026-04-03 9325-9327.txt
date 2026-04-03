@@ -1,0 +1,100 @@
+=================
+PROMOTOR'S REPORT
+=================
+
+
+I initiate a referendum on each of the following proposals, removing
+them from the proposal pool. For each referendum the vote collector is the
+Assessor, the quorum is 4, the adoption index is that of the associated
+proposal, the voting method is AI-majority, and the valid options are FOR
+and AGAINST. (PRESENT and conditional votes are also both valid votes.)
+
+ID         Author         AI     Name                            
+-----------------------------------------------------------------
+9325~      Galle          2.0    Campaign Promises               
+9326~      Murphy         1.0    Money doesn't grow on trees     
+9327~      Nilrem         2.0    (no title)                      
+-----------------------------------------------------------------
+                                                                 
+
+
+The proposal pool contains the following proposals (self-ratifying):
+Author         AI     Name                            
+------------------------------------------------------
+                                                      
+------------------------------------------------------
+                                                      
+
+Legend:
+NNNN*: Democratic proposal
+NNNN~: Ordinary proposal
+NAME+: Coauthors listed below
+
+The full text of all above mentioned proposals is listed below. Where the information shown below differs from the information shown above, the information shown above shall control.
+
+==========
+ID 9325
+Campaign Promises (AI=2.0)
+author: Galle
+coauthors: 
+
+
+Amend the first paragraph of Rule 2630, "The Administrative State", to read as follows:
+---
+Each officer CAN, with 1.5 Agoran consent, enact, amend, or repeal eir own office's Administrative Regulations. Administrative Regulations have the following properties:
+---
+
+Enact a new power 2 rule, entitled "Platforms", with the following text:
+---
+A candidate in an election CAN, with notice, designate a public document as eir Platform for that election. A Platform SHOULD specify changes to the Administrative Regulations for the office being elected.
+
+When a candidate is elected to an office, if e has a Platform for that election, any changes to that office's Administrative Regulations specified by eir most recent Platform take effect.
+---
+
+
+
+
+==========
+ID 9326
+Money doesn't grow on trees (AI=1.0)
+author: Murphy
+coauthors: 
+
+
+Amend Rule 2710 (Genetic Modification) by appending this text to the
+paragraph containing "create a new type of Crop":
+
+      The Land Managor CAN by announcement rename a type of Crop,
+      specifying its new name, but SHOULD NOT do so unless its current
+      name is reasonably likely to cause confusion and delay.
+
+and appending this text to the paragraph containing "remove a type of
+out-of-season Crop":
+
+      This fee is reduced to 1 Pyrite if the type's Sell Price is
+      less than its Seed Cost.
+
+
+
+
+==========
+ID 9327
+(no title) (AI=2.0)
+author: Nilrem
+coauthors: 
+
+
+Amend Rule 2608 (The Notary) by replacing this text:
+
+      1. every pledge, along with its title, creator, time window, time
+         of creation, and time of expiry;
+
+With this text:
+
+      1. every pledge, along with its title, creator, time window, time
+         of creation, time of expiry, and infraction class;
+
+According to rule 2450 (Pledges), breaking a pledge can be an infraction of varying class depending on the value stated while making the pledge. It seems silly to leave this information out of the report
+
+
+

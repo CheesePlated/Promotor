@@ -1,0 +1,26 @@
+authors:
+- Murphy
+- Mischief
+ai: 3.0
+id: '9318'
+name: Clarify indeterminacy
+text: |
+  Amend Rule 2162 (Switches) by replacing this text:
+
+        If a type of switch is not explicitly designated as
+        possibly-indeterminate by its backing document, and if an action
+        or set of actions would cause the value of an instance of that
+        type of switch to become indeterminate, that instance instead
+        takes on its last determinate and possible value, if any,
+        otherwise it takes on its default value.
+
+  with this text:
+
+        If an action or set of actions would cause the value of an
+        instance of a switch to become indeterminate, and that type of
+        switch is not explicitly designated as possibly-indeterminate by
+        its backing document, then that instance instead takes on its last
+        determinate and possible value (or, if it has no such value, then
+        its default value).
+
+  [stop burying the lede.]
