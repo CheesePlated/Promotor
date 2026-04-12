@@ -1,0 +1,24 @@
+authors:
+- qenya
+ai: 2.0
+name: Fix Proposal I Couldn't Think Of A Good Title For
+text: |
+  Amend Rule 991, "Calls for Judgement", by performing the single revision
+  of removing the following text:
+
+        In the same message in which e does so, e SHALL also (and CAN by
+        announcement or by clear specification) assign it an ID number,
+        unless it already has one.
+
+  and inserting the following as a new paragraph immediately preceding the
+  last paragraph:
+
+        If a CFJ does not have an ID number, the Arbitor CAN by
+        announcement or by clear specification assign an ID number to it,
+        and SHALL do so in any message in which e assigns a player to
+        judge it.
+
+  Assign the ID number 4140 to the CFJ called by Galle on 2026-02-26.
+
+  Grant Janet one number card of type 0; one number card of type 1; and
+  two number cards of type 4.
