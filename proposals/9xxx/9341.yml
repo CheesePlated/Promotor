@@ -1,0 +1,27 @@
+authors:
+- Murphy
+ai: 3.0
+id: '9341'
+name: Alternative simultaneous rule changes v1.1
+text: |
+  Amend Rule 105 (Rule Changes) by replacing the paragraph containing "A
+  rule change is any effect that falls into the above classes." with:
+
+        A rule change is any effect that falls into the above classes.
+        Rule changes always occur sequentially, never simultaneously. If a
+        specification would ever be interpreted as causing multiple
+        changes to happen at once, it is instead interpreted as attempting
+        to cause them to occur separately, in the order they are listed in
+        the specification; or, if no such order is specified, and choosing
+        one order over another would not make a substantive difference to
+        the gamestate, then in order of increasing rule number (ties
+        broken by when the rules were created, earliest to latest).
+
+  [Explicitly allows proposals like "Amend all rules containing X by
+   replacing X with Y" where it would make no substantive difference which
+   order those amendments occurred, as long as they all did occur.
+
+   A malformed proposal amounting to "Repeal all or most rules" would be
+   pretty much guaranteed to make a substantive difference, in which case
+   this clause would remain silent, and the next paragraph of R105 would
+   still negate it due to ambiguity.]

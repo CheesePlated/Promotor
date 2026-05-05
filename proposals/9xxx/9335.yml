@@ -1,0 +1,22 @@
+authors:
+- Murphy
+- ais523
+ai: 1.7
+id: '9335'
+name: Infraction reporting requirements
+text: |
+  Amend Rule 2478 (Justice) by replacing this text:
+
+        The Referee's weekly report contains a list of noted and
+        investigated Infractions committed in the previous week.
+
+  with this text:
+
+        The Referee's weekly report includes a list of infractions
+        noted, investigated, and/or non-automatically forgiven in the
+        previous week.
+
+  [Adjust scope to look at when an infraction was responded to, not when
+   it was committed. Include infractions noted and not yet investigated,
+   in case the Referee has not yet decided how many Blots are appropriate,
+   plus infractions forgiven with Agoran consent.]

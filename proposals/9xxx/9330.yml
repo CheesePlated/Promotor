@@ -1,6 +1,7 @@
 authors:
 - Murphy
 ai: 1.0
+id: '9330'
 name: Operands
 text: |
   Create a rule titled "Operands" with this text:

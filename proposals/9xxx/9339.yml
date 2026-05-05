@@ -1,0 +1,34 @@
+authors:
+- Nilrem
+- ais523
+ai: 2.2
+id: '9339'
+name: Unbearable Confusion
+text: |
+  Create a new Rule with power 2.2 Titled "Temporary Helper" with the following text:
+
+        This rule takes priority over rule 2618.
+
+        The text of a promise CAN be altered after it was created by
+        proposals with Adoption Index 2.2 or greater.
+
+  For each existing promise, modify its text by replacing all instances of
+  the phrase "the bearer" with the phrase "the casher".
+
+  Repeal the Rule titled "Temporary Helper".
+
+  Modify Rule 2618 by replacing the following text:
+
+        In a promise's text, "the bearer" and "the casher" (or the like)
+        both refer to the player who cashed the promise, and "this
+        promise" (or the like) refers to the promise. The text of the
+        promise can refer to the context of the message in which it is
+        cashed, but the context of the message does not otherwise change
+        the meaning of the promise.
+
+  With this text:
+
+        In a promise's text, "this promise" (or the like) refers to the
+        promise. The text of the promise can refer to the context of the
+        message in which it is cashed, but the context of the message does
+        not otherwise change the meaning of the promise.

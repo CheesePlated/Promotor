@@ -1,0 +1,15 @@
+authors:
+- Galle
+ai: 3.0
+id: '9340'
+name: Simultaneous Rule Changes Fix
+text: |
+  Amend Rule 105 ("Rule Changes") by replacing the following text:
+  ---
+  A rule change is any effect that falls into the above classes. Rule changes always occur sequentially, never simultaneously. If a specification would ever be interpreted as causing multiple changes to happen at once, it is instead interpreted as attempting to cause them to occur separately, in the order they are listed in the specification.
+  ---
+
+  With the following text:
+  ---
+  A rule change is any effect that falls into the above classes. Rule changes always occur sequentially, never simultaneously. If a specification would ever be interpreted as causing multiple changes to happen at once, it is instead interpreted as attempting to cause them to occur separately, in the order they are listed in the specification. If no such order can be inferred, then the specified rule changes are void and without effect.
+  ---
