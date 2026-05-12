@@ -1,0 +1,131 @@
+=================
+PROMOTOR'S REPORT
+=================
+
+
+I initiate a referendum on each of the following proposals, removing
+them from the proposal pool. For each referendum the vote collector is the
+Assessor, the quorum is 7, the adoption index is that of the associated
+proposal, the voting method is AI-majority, and the valid options are FOR
+and AGAINST. (PRESENT and conditional votes are also both valid votes.)
+
+ID         Author         AI     Name                            
+-----------------------------------------------------------------
+9342~      Galle          1.0    Secure Scoring                  
+9343~      Galle          1.0    Secure Farming                  
+9344~      Murphy         1.0    Number make other number go up  
+9345~      Murphy         1.0    Operands v1.1/1                 
+-----------------------------------------------------------------
+                                                                 
+
+
+The proposal pool contains the following proposals (self-ratifying):
+Author         AI     Name                              
+--------------------------------------------------------
+Trigon         1.0    No double scores for new players  
+--------------------------------------------------------
+                                                        
+
+Legend:
+NNNN*: Democratic proposal
+NNNN~: Ordinary proposal
+NAME+: Coauthors listed below
+
+The full text of all above mentioned proposals is listed below. Where the information shown below differs from the information shown above, the information shown above shall control.
+
+==========
+ID 9342
+Secure Scoring (AI=1.0)
+author: Galle
+coauthors: 
+
+
+Amend Rule 2713 ("Scoring Numbers") by appending the following paragraph:
+---
+Causing a player to score a number is secured.
+---
+
+
+
+
+==========
+ID 9343
+Secure Farming (AI=1.0)
+author: Galle
+coauthors: 
+
+
+If Proposal 9333 was adopted, amend Rule 2709 ("The Growth Cycle") by appending the following sentence to the first paragraph:
+---
+Causing a Crop to ripen is secured.
+---
+
+
+
+
+==========
+ID 9344
+Number make other number go up (AI=1.0)
+author: Murphy
+coauthors: 
+
+
+Amend Rule 2683 (The Boulder) by replacing the paragraph starting "Each
+player CAN, once a week, by announcement, push the boulder." with:
+
+      Each player CAN, once a week, by announcement or by paying a fee
+      of one number card of any type, push the boulder. When a player
+      pushes the Boulder, its Height is increased by 1. At the beginning
+      of each week, if the number of times the boulder was pushed in the
+      previous week plus the highest type of card paid to do so (0 if
+      none) is at least as many times as the Boulder's Slope, then the
+      Boulder's Slope is increased by 1; otherwise, the Boulder's Height
+      is set to 0, and the Boulder's Slope is set to 1. The Absurdor
+      SHOULD list the largest Height and Slope of the Boulder ever
+      reached in eir report.
+
+
+
+
+==========
+ID 9345
+Operands v1.1/1 (AI=1.0)
+author: Murphy
+coauthors: 
+
+
+Create a rule titled "Operands" with this text:
+
+      Operand is a player switch, tracked by the Numerator, with values
+      Sum (default), Difference, Product, and Quotient.
+
+      Once per month, a player CAN flip eir Operand by announcement.
+
+Amend Rule 2714 (Spending Number Cards) by replacing the paragraph
+starting "For any two decimal digits X and Y" with this text:
+
+      For any two decimal digits X and Y (which may be the same), a
+      player CAN pay 2 spendies, a number card of type X, and a number
+      card of type Y to grant emself a number card whose type is equal
+      (modulo 10) to:
+
+        * X+Y, if eir Operand is Sum
+
+        * X-Y or Y-X, if eir Operand is Difference
+
+        * X*Y, if eir Operand is Product
+
+        * floor(X/Y) or ceiling(X/Y), if eir Operand is Quotient and Y
+          is not 0
+
+
+
+==========
+No double scores for new players (AI=1.0)
+author: Trigon
+coauthors: 
+
+
+Amend rule 2585, Birthday Gifts, by adding after the text "by this method for that instance of eir Agoran Birthday" the text "and provided that that instance of eir Agoran Birthday is not eir date of first registration"
+
+
