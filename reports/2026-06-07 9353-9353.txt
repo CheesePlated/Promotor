@@ -1,0 +1,51 @@
+=================
+PROMOTOR'S REPORT
+=================
+
+
+I initiate a referendum on each of the following proposals, removing
+them from the proposal pool. For each referendum the vote collector is the
+Assessor, the quorum is 6, the adoption index is that of the associated
+proposal, the voting method is AI-majority, and the valid options are FOR
+and AGAINST. (PRESENT and conditional votes are also both valid votes.)
+
+ID         Author         AI     Name                            
+-----------------------------------------------------------------
+9353~      ais523         1.0    Costlier crafting               
+-----------------------------------------------------------------
+                                                                 
+
+
+The proposal pool contains the following proposals (self-ratifying):
+Author         AI     Name                            
+------------------------------------------------------
+                                                      
+------------------------------------------------------
+                                                      
+
+Legend:
+NNNN*: Democratic proposal
+NNNN~: Ordinary proposal
+NAME+: Coauthors listed below
+
+The full text of all above mentioned proposals is listed below. Where the information shown below differs from the information shown above, the information shown above shall control.
+
+==========
+ID 9353
+Costlier crafting (AI=1.0)
+author: ais523
+coauthors: 
+
+
+In rule 2714, change "2 spendies" to "6 spendies".
+
+[Right now, there isn't very much incentive to trade number cards
+because you can generally get what you need by crafting, and this is
+making it too easy to Outshine The Sun because common number cards are
+common enough to make that fairly easily possible.
+
+By making crafting much more expensive, it encourages trading for the
+rare cards rather than creating new rare cards.]
+
+
+
