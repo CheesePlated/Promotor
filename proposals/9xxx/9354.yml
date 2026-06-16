@@ -1,0 +1,15 @@
+authors:
+- Galle
+ai: 2.0
+id: '9354'
+name: Don't scribble in my calendar
+text: |
+  [ The author of this proposal assumes that the current ruleset allows players to leverage Scheduled Actions to bypass the limitation that certain actions be performed as oneself. This assumption is untested. This proposal aims to close this loophole by banning the creation of Scheduled Actions on behalf of another player. ]
+
+  In rule 2716, replace:
+
+       A player CAN pay a fee of N spendies
+
+  With:
+
+       A player CAN, acting as emself, pay a fee of N spendies

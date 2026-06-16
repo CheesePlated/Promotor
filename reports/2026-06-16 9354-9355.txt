@@ -1,0 +1,66 @@
+=================
+PROMOTOR'S REPORT
+=================
+
+
+I initiate a referendum on each of the following proposals, removing
+them from the proposal pool. For each referendum the vote collector is the
+Assessor, the quorum is 5, the adoption index is that of the associated
+proposal, the voting method is AI-majority, and the valid options are FOR
+and AGAINST. (PRESENT and conditional votes are also both valid votes.)
+
+ID         Author         AI     Name                            
+-----------------------------------------------------------------
+9354~      Galle          2.0    Don't scribble in my calendar   
+9355*      Mischief       3.0    Active Confederation            
+-----------------------------------------------------------------
+                                                                 
+
+
+The proposal pool contains the following proposals (self-ratifying):
+Author         AI     Name                            
+------------------------------------------------------
+                                                      
+------------------------------------------------------
+                                                      
+
+Legend:
+NNNN*: Democratic proposal
+NNNN~: Ordinary proposal
+NAME+: Coauthors listed below
+
+The full text of all above mentioned proposals is listed below. Where the information shown below differs from the information shown above, the information shown above shall control.
+
+==========
+ID 9354
+Don't scribble in my calendar (AI=2.0)
+author: Galle
+coauthors: 
+
+
+[ The author of this proposal assumes that the current ruleset allows players to leverage Scheduled Actions to bypass the limitation that certain actions be performed as oneself. This assumption is untested. This proposal aims to close this loophole by banning the creation of Scheduled Actions on behalf of another player. ]
+
+In rule 2716, replace:
+
+     A player CAN pay a fee of N spendies
+
+With:
+
+     A player CAN, acting as emself, pay a fee of N spendies
+
+
+
+
+==========
+ID 9355
+Active Confederation (AI=3.0)
+author: Mischief
+coauthors: 
+
+
+[Making it clear that the entities themselves confederate; that is, they are not confederated by some external entity.]
+
+Amend rule 869 (How to Join and Leave Agora) by replacing "confederated" with "who confederate"
+
+
+
