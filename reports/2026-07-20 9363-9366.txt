@@ -1,0 +1,94 @@
+=================
+PROMOTOR'S REPORT
+=================
+
+
+I initiate a referendum on each of the following proposals, removing
+them from the proposal pool. For each referendum the vote collector is the
+Assessor, the quorum is 7, the adoption index is that of the associated
+proposal, the voting method is AI-majority, and the valid options are FOR
+and AGAINST. (PRESENT and conditional votes are also both valid votes.)
+
+ID         Author         AI     Name                            
+-----------------------------------------------------------------
+9363~      Galle          2.0    Season Specification            
+9364~      Galle          1.0    Sysphyean Effort                
+9365~      Galle          2.0    Unique CFJ IDs v2               
+9366~      Galle          1.0    Greater Genetic Mutation v2     
+-----------------------------------------------------------------
+                                                                 
+
+
+The proposal pool contains the following proposals (self-ratifying):
+Author         AI     Name                            
+------------------------------------------------------
+                                                      
+------------------------------------------------------
+                                                      
+
+Legend:
+NNNN*: Democratic proposal
+NNNN~: Ordinary proposal
+NAME+: Coauthors listed below
+
+The full text of all above mentioned proposals is listed below. Where the information shown below differs from the information shown above, the information shown above shall control.
+
+==========
+ID 9363
+Season Specification (AI=2.0)
+author: Galle
+coauthors: 
+
+
+Amend Rule 2710 ("Genetic Modification") by replacing the first paragraph with the following text:
+---
+Once per Crop Season, a player CAN pay a fee of 500 Pyrite to create a new type of Crop, specifying its name and, optionally, its Growth Season. The Land Managor CAN once by announcement, and SHALL in a timely fashion, set its Seed Cost, Growth Duration, Resilience, Opportunity, and Sell Price to randomly selected valid values, as well as its Growth Season if none was specified. The Land Managor CAN by announcement rename a type of Crop, specifying its new name, but SHOULD NOT do so unless its current name is reasonably likely to cause confusion and delay.
+---
+
+
+
+
+==========
+ID 9364
+Sysphyean Effort (AI=1.0)
+author: Galle
+coauthors: 
+
+
+Amend Rule 2683 ("The Boulder") by appending the following paragraph:
+---
+Once per week, each player who has pushed the boulder exactly once that week can pay a fee of X spendies, where X is equal to 10 plus the Boulder's Slope, to push the boulder a second time.
+---
+
+
+
+
+==========
+ID 9365
+Unique CFJ IDs v2 (AI=2.0)
+author: Galle
+coauthors: 
+
+
+> Amend Rule 991 ("Calls for Judgement") by replacing the eighth paragraph with the following text:
+> ---
+> If a CFJ does not have a unique CFJ ID number, the Arbitor CAN by announcement or by clear specification assign an ID number to it, and SHALL do so in any message in which e assigns a player to judge it.
+> ---
+
+
+
+
+==========
+ID 9366
+Greater Genetic Mutation v2 (AI=1.0)
+author: Galle
+coauthors: 
+
+
+Amend Rule 2710 ("Genetic Modification") by replacing the fourth paragraph with the following text:
+---
+Once per Crop Season, the Land Managor CAN and SHALL by announcement set a randomly select attribute (Seed Cost, Growth Duration, Opportunity, Resilience, or Sell Price) of a randomly selected type of Crop that was in-season during the previous season to a randomly selected valid value. If there is no such type to select, then e SHALL instead announce that fact.
+---
+
+
+
