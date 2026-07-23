@@ -1,0 +1,24 @@
+authors:
+- juan
+- 4st
+ai: 1.0
+id: '9356'
+name: Hailboulder
+text: |
+  Ammend Rule 2683 by replacing the paragraph beginning with “Each player
+  CAN” with the following:
+
+      Each player CAN, once a week, by announcement or by paying a fee
+      of one number card of any type, push the boulder. When a player
+      pushes the Boulder, its Height is increased by 1. At the beginning
+      of each week, if the number of times the boulder was pushed in the
+      previous week plus the highest type of card paid to do so (0 if
+      none) is at least as many times as the Boulder's Slope, then the
+      Boulder's Slope is increased by 1; otherwise, the Boulder's Height
+      and the Boulder's Slope are updated according to the following rule:
+      
+      * If the value is odd, set it to three times its current value plus one.
+      * If the value is even, set it to half of its current value.
+      
+      The Absurdor SHOULD list the largest Height and Slope of the Boulder
+      ever reached in eir report.

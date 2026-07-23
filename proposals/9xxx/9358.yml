@@ -1,0 +1,16 @@
+authors:
+- Galle
+ai: 1.5
+id: '9358'
+name: The Pyrite Preservation Proposal v2
+text: |
+  Amend Rule 2711 ("Outshining the Sun") by replacing the following text:
+  ---
+  * All Pyrite is destroyed.
+  ---
+  With the following text:
+  ---
+  * All Pyrite in eir possession is destroyed.
+  * Half of all Pyrite in each other player's possession, rounded up, is destroyed.
+  * For each player with more than 4000 Pyrite, all but 4000 Pyrite in their possession is destroyed.
+  ---

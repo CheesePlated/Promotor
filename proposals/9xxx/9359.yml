@@ -1,0 +1,28 @@
+authors:
+- msh210
+- Cosmo
+ai: 3.1
+id: '9359'
+name: Anyone can make a festival!
+text: |
+  Amend Rule 2480 ("Festivals", power 3.1) by adding the
+  following sentence
+
+  {
+  For any integer N greater than Agora's Festivity, any player CAN flip
+  Agora's Festivity to N with 5 support from N-Festive players, unless
+  Agora's Festivity has had a value greater than or equal to N in the
+  past 21 days.
+  }
+
+  immediately after and in addition to the existing sentence
+
+  {
+  For any integer N greater than Agora's Festivity, an N-Festive player
+  CAN flip Agora's Festivity to N with 4 support from other N-Festive
+  players, unless Agora's Festivity has had a value greater than or
+  equal to N in the past 21 days.
+  }
+
+  (I don't see why such a person would want to do so, but if e does then
+  I don't see any reason to stop em.)
