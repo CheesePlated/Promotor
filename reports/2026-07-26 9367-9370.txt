@@ -1,0 +1,136 @@
+=================
+PROMOTOR'S REPORT
+=================
+
+
+I initiate a referendum on each of the following proposals, removing
+them from the proposal pool. For each referendum the vote collector is the
+Assessor, the quorum is 7, the adoption index is that of the associated
+proposal, the voting method is AI-majority, and the valid options are FOR
+and AGAINST. (PRESENT and conditional votes are also both valid votes.)
+
+ID         Author         AI     Name                                        
+-----------------------------------------------------------------------------
+9367*      qenya          3.0    Divestment                                  
+9368~      Galle          1.0    Greater Genetic Mutation v3                 
+9369*      snail+         3.0    Oops                                        
+9370~      Galle          2.0    Probably shouldn't leave this lying around  
+-----------------------------------------------------------------------------
+                                                                             
+
+
+The proposal pool contains the following proposals (self-ratifying):
+Author         AI     Name                            
+------------------------------------------------------
+                                                      
+------------------------------------------------------
+                                                      
+
+Legend:
+NNNN*: Democratic proposal
+NNNN~: Ordinary proposal
+NAME+: Coauthors listed below
+
+The full text of all above mentioned proposals is listed below. Where the information shown below differs from the information shown above, the information shown above shall control.
+
+==========
+ID 9367
+Divestment (AI=3.0)
+author: qenya
+coauthors: 
+
+
+Set the Indigo Ribbon Ownership of the author of this proposal to False.
+
+[Many, many years ago, I acquired an Indigo Ribbon through a scam,
+ without realising this was considered Poor Form, and later used it in a
+ Win by Renaissance. Since then I have desperately been trying to
+ account for it by achieving degrees and declining to award myself the
+ ribbon, but people keep "helpfully" awarding it to me anyway to allow
+ for my "forgetfulness".
+ 
+ This just happened again and I do not want to go through yet another
+ round of this. Can we fix it by proposal, please?]
+
+
+
+
+==========
+ID 9368
+Greater Genetic Mutation v3 (AI=1.0)
+author: Galle
+coauthors: 
+
+
+Amend Rule 2710 ("Genetic Modification") by replacing the fourth paragraph with the following text:
+---
+Once per Crop Season, the Land Managor CAN and SHALL by announcement set a randomly selected attribute (Seed Cost, Growth Duration, Opportunity, Resilience, or Sell Price) of a randomly selected type of Crop that was in-season during the previous season to a randomly selected valid value. If there is no such type to select, then e SHALL instead announce that fact.
+
+
+
+
+==========
+ID 9369
+Oops (AI=3.0)
+author: snail
+coauthors: Mischief
+
+
+Amend Rule 2713 (Scoring Numbers) by replacing the text:
+
+{
+
+      Whenever a player scores a number as described in this rule, the
+      Numerator CAN once, and SHALL in a timely fashion, grant that
+      player (and, if the number was scored due to the adoption of a
+      proposal, also a randomly chosen other player who voted FOR on a
+      referendum to adopt that proposal) a number card for each digit in
+      that number, whose type is that digit.
+
+
+}
+
+with the text:
+
+{
+
+      Whenever a player scores a number as described in this rule, the
+      Numerator CAN once by announcement, and SHALL in a timely fashion,
+grant that
+      player (and, if the number was scored due to the adoption of a
+      proposal, also a randomly chosen other player who voted FOR on a
+      referendum to adopt that proposal) a number card for each digit in
+      that number, whose type is that digit.
+
+}
+
+The following statement is hereby ratified:
+{
+Each attempt to grant a player a number card that occured prior to the
+adoption of this proposal took effect as if the text "CAN once," in Rule
+2713 instead read "CAN once by announcement,".
+}
+
+[This should work for each version of Rule 2713 that has existed. I'm doing
+this instead of changing the past text of the rule because doing that
+retroactively would have caused proposals that amended that specific text
+to fail.]
+
+[I also considered expunging the Numerator's duties to avoid shenanigans,
+but that might do more harm than good, and the ratification should already
+cover that issue.]
+
+
+
+
+==========
+ID 9370
+Probably shouldn't leave this lying around (AI=2.0)
+author: Galle
+coauthors: 
+
+
+Repeal the rule entitled "Purchased Re-enactment".
+
+
+
