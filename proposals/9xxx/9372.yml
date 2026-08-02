@@ -1,0 +1,18 @@
+authors:
+- Mischief
+ai: 1.0
+id: '9372'
+name: Testing, Testing, 1, 2, 3
+text: |2-
+
+  Create a rule entitled "Test Alpha" reading "Hello, world!"
+
+  Create a rule entitled "Test Beta" reading "Hello, world!"
+
+  Create a rule entitled "Test Gamma" reading "Hello, world!"
+
+  Repeal the rule titled "Test Gamma"
+
+  Repeal the rule titled "Test Beta"
+
+  Repeal the rule titled "Test Alpha" 

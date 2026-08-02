@@ -7,7 +7,7 @@ from sys import stdin, stderr, exit
 import prettytable as pt
 from datetime import datetime, UTC
 
-DISTRIBUTION_TEMPLATE= """
+DISTRIBUTION_TEMPLATE = """
 
 I initiate a referendum on each of the following proposals, removing
 them from the proposal pool. For each referendum the vote collector is the
@@ -70,17 +70,20 @@ coauthors: {coauthors}
 
 yaml = YAML()
 
+
 def first_missing(numbers: list[int]) -> int:
     for i in range(max(numbers) if numbers else 1):
         if i not in numbers:
             return i
     return max(numbers) + 1
 
+
 def highest_id() -> int:
     to_num = lambda x: lambda y: int(y[:-x])
     middle = str(max(map(to_num(3), os.listdir("proposals")))) + "xxx"
     proposal = max(map(to_num(4), os.listdir(os.path.join("proposals", middle))))
     return proposal
+
 
 def add_proposal() -> None:
     name = input("Title: ")
@@ -89,10 +92,10 @@ def add_proposal() -> None:
     print("Text:")
     text = "".join(stdin.readlines())
     proposal = {
-        "authors":  authors,
-        "ai":       adoption_index,
-        "name":     name,
-        "text":     LiteralScalarString(text)
+        "authors": authors,
+        "ai": adoption_index,
+        "name": name,
+        "text": LiteralScalarString(text),
     }
 
     pool_numbers = list(map(lambda x: int(x[:-4]), os.listdir("pool")))
@@ -102,23 +105,34 @@ def add_proposal() -> None:
     with open(fullpath, "x") as f:
         yaml.dump(proposal, f)
 
+
 def generate() -> str:
     distributions = pt.PrettyTable(
         ["ID", "Author", "AI", "Name"],
         hrules=pt.HRuleStyle.HEADER,
         vrules=pt.VRuleStyle.NONE,
         none_format=" ",
-        align="l"
+        align="l",
     )
-    for key, value in {"ID":8, "Author":12, "AI":4, "Name":30}.items():
+    for key, value in {"ID": 8, "Author": 12, "AI": 4, "Name": 30}.items():
         distributions.min_width[key] = value
-    pool = distributions.copy()
-    pool.del_column("ID")
+
+    pool = pt.PrettyTable(
+        ["Author", "AI", "Name"],
+        hrules=pt.HRuleStyle.HEADER,
+        vrules=pt.VRuleStyle.NONE,
+        none_format=" ",
+        align="l",
+    )
+    for key, value in {"Author": 12, "AI": 4, "Name": 30}.items():
+        distributions.min_width[key] = value
 
     proposals = get_pool()
     for proposal in proposals:
         print(proposal["number"], proposal["name"])
-    to_distribute, pool_proposals = select_proposals(proposals, input("Proposals to distribute: "))
+    to_distribute, pool_proposals = select_proposals(
+        proposals, input("Proposals to distribute: ")
+    )
 
     first_id = highest_id() + 1
     last_id = first_id + len(to_distribute) - 1
@@ -137,63 +151,90 @@ def generate() -> str:
         os.remove(srcpath)
 
     if not to_distribute:
-        distributions.add_row([None, None, None, None]) # So the table has some space in between if it's empty
+        distributions.add_row(
+            [None, None, None, None]
+        )  # So the table has some space in between if it's empty
     else:
         distributions.add_rows(
-            list([proposal["id"] + ("~" if proposal["ai"] < 3 else "*"),
-             proposal["authors"][0] + ("+" if len(proposal["authors"]) > 1 else ""),
-             proposal["ai"],
-             proposal["name"]] for proposal in to_distribute)
+            list(
+                [
+                    proposal["id"] + ("~" if proposal["ai"] < 3 else "*"),
+                    proposal["authors"][0]
+                    + ("+" if len(proposal["authors"]) > 1 else ""),
+                    proposal["ai"],
+                    proposal["name"],
+                ]
+                for proposal in to_distribute
+            )
         )
     distributions.add_divider()
-    distributions.add_row([None, None, None, None]) # Jank so I get the bottom border as well
+    distributions.add_row(
+        [None, None, None, None]
+    )  # Jank so I get the bottom border as well
     if not pool_proposals:
-        pool.add_row([None, None, None]) # So the table has some space in between if it's empty
+        pool.add_row(
+            [None, None, None]
+        )  # So the table has some space in between if it's empty
     else:
         pool.add_rows(
-            list([
-             proposal["authors"][0] + ("+" if len(proposal["authors"]) > 1 else ""),
-             proposal["ai"],
-             proposal["name"]] for proposal in pool_proposals)
+            list(
+                [
+                    proposal["authors"][0]
+                    + ("+" if len(proposal["authors"]) > 1 else ""),
+                    proposal["ai"],
+                    proposal["name"],
+                ]
+                for proposal in pool_proposals
+            )
         )
     pool.add_divider()
     pool.add_row([None, None, None])
 
-    formatted_distributions = "\n".join(line[2:] for line in distributions.get_string().splitlines()) # Get rid of the extra space at the start, it annoys me
-    formatted_pool = "\n".join(line[2:] for line in pool.get_string().splitlines()) # Get rid of the extra space at the start, it annoys me
+    formatted_distributions = "\n".join(
+        line[2:] for line in distributions.get_string().splitlines()
+    )  # Get rid of the extra space at the start, it annoys me
+    formatted_pool = "\n".join(
+        line[2:] for line in pool.get_string().splitlines()
+    )  # Get rid of the extra space at the start, it annoys me
 
     # Table black magic done, now the rest
     quorum = input("Enter the quorum: ")
-    distribution_text = DISTRIBUTION_TEMPLATE.format(quorum=quorum, distributions=formatted_distributions) if to_distribute else ""
+    distribution_text = (
+        DISTRIBUTION_TEMPLATE.format(
+            quorum=quorum, distributions=formatted_distributions
+        )
+        if to_distribute
+        else ""
+    )
     report = MAIN_TEMPLATE.format(distribution=distribution_text, pool=formatted_pool)
     for proposal in to_distribute:
         listing = LISTING_TEMPLATE_DISTRIBUED.format(
-            id = proposal["id"],
-            name = proposal["name"],
-            ai = proposal["ai"],
-            author = proposal["authors"][0],
-            coauthors = ", ".join(proposal["authors"][1:]),
-            text = proposal["text"]
+            id=proposal["id"],
+            name=proposal["name"],
+            ai=proposal["ai"],
+            author=proposal["authors"][0],
+            coauthors=", ".join(proposal["authors"][1:]),
+            text=proposal["text"],
         )
         report += listing
     for proposal in pool_proposals:
         listing = LISTING_TEMPLATE_POOL.format(
-            name = proposal["name"],
-            ai = proposal["ai"],
-            author = proposal["authors"][0],
-            coauthors = ", ".join(proposal["authors"][1:]),
-            text = proposal["text"]
+            name=proposal["name"],
+            ai=proposal["ai"],
+            author=proposal["authors"][0],
+            coauthors=", ".join(proposal["authors"][1:]),
+            text=proposal["text"],
         )
         report += listing
     if not (to_distribute + pool_proposals):
         report = EMPTY_REPORT
-    
-    filename = (datetime.now(tz=UTC).strftime("%Y-%m-%d") + f" {distribution_range}").strip() + ".txt"
+
+    filename = (
+        datetime.now(tz=UTC).strftime("%Y-%m-%d") + f" {distribution_range}"
+    ).strip() + ".txt"
     with open(os.path.join("reports", filename), "xt") as f:
         f.write(report.removeprefix("\n"))
-    return(report)
-
-
+    return report
 
 
 def get_pool() -> list[dict]:
@@ -206,7 +247,8 @@ def get_pool() -> list[dict]:
         proposal["number"] = int(name[:-4])
         proposals.append(proposal)
     return proposals
-    
+
+
 def select_proposals(pool: list[dict], selector: str) -> tuple[list[dict], list[dict]]:
     dist = []
     if "," in selector:
@@ -227,7 +269,6 @@ def select_proposals(pool: list[dict], selector: str) -> tuple[list[dict], list[
         if d != -1:
             dist = [pool.pop(d)]
     return dist, pool
-                
 
 
 def main() -> None:
@@ -239,7 +280,7 @@ def main() -> None:
         add_proposal()
     elif args.command in ["generate", "g"]:
         print(generate())
- 
+
 
 if __name__ == "__main__":
     main()
