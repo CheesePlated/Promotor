@@ -251,6 +251,8 @@ def get_pool() -> list[dict]:
 
 def select_proposals(pool: list[dict], selector: str) -> tuple[list[dict], list[dict]]:
     dist = []
+    if selector == "":
+        return [], pool
     if "," in selector:
         for newselector in selector.split(","):
             d, pool = select_proposals(pool, newselector)
