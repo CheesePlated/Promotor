@@ -136,7 +136,7 @@ def generate() -> str:
 
     first_id = highest_id() + 1
     last_id = first_id + len(to_distribute) - 1
-    distribution_range = f"{first_id}-{last_id}"
+    distribution_range = f"{first_id}-{last_id}" if to_distribute else ""
 
     for proposal, pid in zip(to_distribute, range(first_id, last_id + 1)):
         dest = open(os.path.join("proposals", str(pid)[:-3] + "xxx", f"{pid}.yml"), "x")
