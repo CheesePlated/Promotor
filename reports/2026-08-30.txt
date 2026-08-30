@@ -1,0 +1,60 @@
+=================
+PROMOTOR'S REPORT
+=================
+
+The proposal pool contains the following proposals (self-ratifying):
+Author     AI    Name                    
+-----------------------------------------
+Ronic      1.0   Cancellation Insurance  
+pizza723   3.0   Acyclic Voting          
+-----------------------------------------
+                                         
+
+Legend:
+NNNN*: Democratic proposal
+NNNN~: Ordinary proposal
+NAME+: Coauthors listed below
+
+The full text of all above mentioned proposals is listed below. Where the information shown below differs from the information shown above, the information shown above shall control.
+
+==========
+Cancellation Insurance (AI=1.0)
+author: Ronic
+coauthors: 
+
+
+Amend rule 2127 "Conditional Votes" by replacing the sentence
+
+    If the conditional is clearly specified, and evaluates to
+    a valid vote, it is counted as that vote; otherwise, it is counted
+    as PRESENT.
+
+with
+
+    If the conditional is clearly specified, and evaluates to
+    a valid vote that does not depend on its own evaluation, it is counted as that vote; otherwise, it is counted
+    as PRESENT.
+
+
+
+
+==========
+Acyclic Voting (AI=3.0)
+author: pizza723
+coauthors: 
+
+
+Amend rule 2127 "Conditional Votes" by replacing the sentence
+
+    If the conditional is clearly specified, and evaluates to
+    a valid vote, it is counted as that vote; otherwise, it is counted
+    as PRESENT.
+
+with
+
+    If the conditional is clearly specified, and evaluates to
+    a valid vote that does not depend on its own evaluation, it is counted as that vote; otherwise, it is counted
+    as PRESENT.
+
+
+

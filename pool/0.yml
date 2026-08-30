@@ -1,0 +1,16 @@
+authors:
+- pizza723
+ai: 3.0
+name: Acyclic Voting
+text: |
+  Amend rule 2127 "Conditional Votes" by replacing the sentence
+
+      If the conditional is clearly specified, and evaluates to
+      a valid vote, it is counted as that vote; otherwise, it is counted
+      as PRESENT.
+
+  with
+
+      If the conditional is clearly specified, and evaluates to
+      a valid vote that does not depend on its own evaluation, it is counted as that vote; otherwise, it is counted
+      as PRESENT.
