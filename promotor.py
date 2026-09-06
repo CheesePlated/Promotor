@@ -46,6 +46,7 @@ The proposal pool is empty.
 LISTING_TEMPLATE_POOL = """
 ==========
 {name} (AI={ai})
+class: {proposal_class}
 author: {author}
 coauthors: {coauthors}
 
@@ -59,6 +60,7 @@ LISTING_TEMPLATE_DISTRIBUED = """
 ==========
 ID {id}
 {name} (AI={ai})
+class: {proposal_class}
 author: {author}
 coauthors: {coauthors}
 
@@ -158,7 +160,7 @@ def generate() -> str:
         distributions.add_rows(
             list(
                 [
-                    proposal["id"] + ("~" if proposal["ai"] < 3 else "*"),
+                    proposal["id"] + ("*" if (proposal["ai"] >= 3 or proposal.get("class") == "democratic") else "~"),
                     proposal["authors"][0]
                     + ("+" if len(proposal["authors"]) > 1 else ""),
                     proposal["ai"],
@@ -211,6 +213,7 @@ def generate() -> str:
         listing = LISTING_TEMPLATE_DISTRIBUED.format(
             id=proposal["id"],
             name=proposal["name"],
+            proposal_class="democratic" if proposal["ai"] >= 3 else proposal.get("class", "ordinary"),
             ai=proposal["ai"],
             author=proposal["authors"][0],
             coauthors=", ".join(proposal["authors"][1:]),
@@ -221,6 +224,7 @@ def generate() -> str:
         listing = LISTING_TEMPLATE_POOL.format(
             name=proposal["name"],
             ai=proposal["ai"],
+            proposal_class="democratic" if proposal["ai"] >= 3 else proposal.get("class", "ordinary"),
             author=proposal["authors"][0],
             coauthors=", ".join(proposal["authors"][1:]),
             text=proposal["text"],

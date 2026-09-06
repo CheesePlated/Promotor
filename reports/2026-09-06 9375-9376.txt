@@ -1,0 +1,78 @@
+=================
+PROMOTOR'S REPORT
+=================
+
+
+I initiate a referendum on each of the following proposals, removing
+them from the proposal pool. For each referendum the vote collector is the
+Assessor, the quorum is 5, the adoption index is that of the associated
+proposal, the voting method is AI-majority, and the valid options are FOR
+and AGAINST. (PRESENT and conditional votes are also both valid votes.)
+
+ID         Author         AI     Name                            
+-----------------------------------------------------------------
+9375*      pizza723       3.0    Acyclic Voting                  
+9376~      Ronic          1.0    Cancellation Insurance          
+-----------------------------------------------------------------
+                                                                 
+
+
+The proposal pool contains the following proposals (self-ratifying):
+Author   AI   Name  
+--------------------
+                    
+--------------------
+                    
+
+Legend:
+NNNN*: Democratic proposal
+NNNN~: Ordinary proposal
+NAME+: Coauthors listed below
+
+The full text of all above mentioned proposals is listed below. Where the information shown below differs from the information shown above, the information shown above shall control.
+
+==========
+ID 9375
+Acyclic Voting (AI=3.0)
+class: democratic
+author: pizza723
+coauthors: 
+
+
+Amend rule 2127 "Conditional Votes" by replacing the sentence
+
+    If the conditional is clearly specified, and evaluates to
+    a valid vote, it is counted as that vote; otherwise, it is counted
+    as PRESENT.
+
+with
+
+    If the conditional is clearly specified, and evaluates to
+    a valid vote that does not depend on its own evaluation, it is counted as that vote; otherwise, it is counted
+    as PRESENT.
+
+
+
+
+==========
+ID 9376
+Cancellation Insurance (AI=1.0)
+class: ordinary
+author: Ronic
+coauthors: 
+
+
+Amend Rule 2716 ("Scheduled Actions") by adding the following paragraph:
+
+"When creating a Scheduled Action, its creator CAN pay an additional
+fee of 1 Spendie to make it cancellable. The creator of a cancellable
+Scheduled Action CAN cancel it by announcement before its Time. When a
+Scheduled Action is cancelled, it ceases to exist. Cancelling a
+Scheduled Action does not refund any Spendies paid to create it."
+
+Rationale: This creates a paid escape hatch for mistakes and changed
+circumstances without making every Scheduled Action reversible for
+free.
+
+
+
