@@ -1,0 +1,61 @@
+=================
+PROMOTOR'S REPORT
+=================
+
+
+I initiate a referendum on each of the following proposals, removing
+them from the proposal pool. For each referendum the vote collector is the
+Assessor, the quorum is 5, the adoption index is that of the associated
+proposal, the voting method is AI-majority, and the valid options are FOR
+and AGAINST. (PRESENT and conditional votes are also both valid votes.)
+
+ID         Author         AI     Name                            
+-----------------------------------------------------------------
+9381~      Mischief       1.5    Less Pure                       
+-----------------------------------------------------------------
+                                                                 
+
+
+The proposal pool contains the following proposals (self-ratifying):
+Author   AI   Name  
+--------------------
+                    
+--------------------
+                    
+
+Legend:
+NNNN*: Democratic proposal
+NNNN~: Ordinary proposal
+NAME+: Coauthors listed below
+
+The full text of all above mentioned proposals is listed below. Where the information shown below differs from the information shown above, the information shown above shall control.
+
+==========
+ID 9381
+Less Pure (AI=1.5)
+class: ordinary
+author: Mischief
+coauthors: 
+
+
+Amend rule 2711 (Outshining the Sun) by replacing the text reading:
+
+      Upon a correct announcement from a player that eir radiance is 100
+      or more (correctly specifying the amount), e Outshines the Sun.
+
+      When a pure player Outshines the Sun, the following happen in
+      order:
+
+      * That player (the Luminary) wins the game.
+
+with:
+
+      Upon a correct announcement from a player that eir radiance is 100
+      or more (correctly specifying the amount), e Outshines the Sun and
+      wins the game.
+
+      When a player wins the game this way (syn. for such a player: the
+      Luminary), the following happen in order:
+
+
+
