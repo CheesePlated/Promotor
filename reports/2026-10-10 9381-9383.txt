@@ -1,0 +1,176 @@
+=================
+PROMOTOR'S REPORT
+=================
+
+
+I initiate a referendum on each of the following proposals, removing
+them from the proposal pool. For each referendum the vote collector is the
+Assessor, the quorum is 6, the adoption index is that of the associated
+proposal, the voting method is AI-majority, and the valid options are FOR
+and AGAINST. (PRESENT and conditional votes are also both valid votes.)
+
+ID         Author         AI     Name                            
+-----------------------------------------------------------------
+9381~      Galle          1.0    Self-Scampering                 
+9382~      Ronic          1.0    Emoji Auctions                  
+9383~      Galle+         1.0    Color                           
+-----------------------------------------------------------------
+                                                                 
+
+
+The proposal pool contains the following proposals (self-ratifying):
+Author   AI   Name  
+--------------------
+                    
+--------------------
+                    
+
+Legend:
+NNNN*: Democratic proposal
+NNNN~: Ordinary proposal
+NAME+: Coauthors listed below
+
+The full text of all above mentioned proposals is listed below. Where the information shown below differs from the information shown above, the information shown above shall control.
+
+==========
+ID 9381
+Self-Scampering (AI=1.0)
+class: ordinary
+author: Galle
+coauthors: 
+
+
+Amend Rule 2701 ("Stamp Scamp") by replacing the word "another" with "a".
+
+[Inspired by mischief's recent attempt to grant emself a stamp; I honestly don't see any reason why this power should not be usable on oneself, an extra stamp per quarter is hardly going to break anything.]
+
+
+
+
+==========
+ID 9382
+Emoji Auctions (AI=1.0)
+class: ordinary
+author: Ronic
+coauthors: 
+
+
+Enact a new Rule of Power 1 entitled "Emoji Auctions" with the following text:
+
+{
+
+An Emoji is an untracked, fixed, indestructible asset with Power 0.
+Exactly one of each of the following Emojis exists:
+
+* Rock Emoji: 🪨 (U+1FAA8)
+* Top Hat Emoji: 🎩 (U+1F3A9)
+* Sun Emoji: ☀️ (U+2600 U+FE0F)
+* Ear of Rice Emoji: 🌾 (U+1F33E)
+* Gem Stone Emoji: 💎 (U+1F48E)
+* Black Joker Emoji: 🃏 (U+1F0CF)
+* Scales Emoji: ⚖️ (U+2696 U+FE0F)
+* Scroll Emoji: 📜 (U+1F4DC)
+* Ribbon Emoji: 🎀 (U+1F380)
+* Ballot Box Emoji: 🗳️ (U+1F5F3 U+FE0F)
+* Trophy Emoji: 🏆 (U+1F3C6)
+* Cyclone Emoji: 🌀 (U+1F300)
+* Red Heart Emoji: ❤️ (U+2764 U+FE0F)
+* Fire Emoji: 🔥 (U+1F525)
+* Seedling Emoji: 🌱 (U+1F331)
+* Crown Emoji: 👑 (U+1F451)
+
+Each Emoji is initially owned by Agora. Emojis can be owned only by
+Agora and current or former players. If an Emoji would otherwise be in
+abeyance, it is transferred to Agora. These transfers are explicitly
+permitted despite Emojis being fixed.
+
+Ownership of an Emoji has no effect under this Rule other than
+identifying its owner.
+
+An Emoji is available if Agora owns it.
+
+An Emoji auction is ongoing from its initiation until it closes. No
+Emoji auction CAN be initiated while another is ongoing, and no more
+than one Emoji auction CAN be initiated in an Agoran month.
+
+A player CAN initiate an Emoji auction by announcement in
+Agora-Business, identifying an available Emoji and an integer N of at
+least 100, and paying a fee of N+10 Pyrite. The identified Emoji
+becomes the auctioned Emoji, that player becomes the leader, and N
+becomes the leading bid.
+
+An Emoji auction closes exactly seven days after its initiation.
+
+While an Emoji auction is ongoing, a player other than the leader CAN
+replace a leading bid of M Pyrite with a bid of N Pyrite by
+announcement in Agora-Business and paying a fee of N Pyrite, provided
+N is an integer at least 100 greater than M. Upon doing so, and only
+once for that action, the former leader is granted M Pyrite if e is
+then a player. The bidder becomes the leader and N becomes the leading
+bid.
+
+The leader CAN raise a leading bid from M Pyrite to N Pyrite by
+announcement in Agora-Business and paying a fee of N-M Pyrite,
+provided N is an integer at least 100 greater than M. No Pyrite is
+granted as a result of such a self-raise.
+
+A leading bid CANNOT be withdrawn or reduced.
+
+A bid is effective only if date-stamped before the auction's closing
+time. If two auction actions have the same date-stamped time, they are
+processed in the order in which they appear in the public
+Agora-Business archive. If that archive does not determine an order,
+the message with the lexicographically earlier Message-ID is processed
+first. Player identity is not used to determine priority.
+
+When an Emoji auction closes, the auctioned Emoji is transferred from
+Agora to the leader. This transfer is explicitly permitted despite the
+Emoji being fixed.
+
+}
+
+[Non-operative rationale:
+
+Agora has many numbers and not enough tiny objects of irrational desire.
+
+The initial collection contains sixteen recognizable symbols drawn
+mostly from Agoran culture. One prepaid auction per month focuses
+attention on one object. The opening fee discourages wasting the
+monthly slot, and the 100-Pyrite minimum increment discourages bid
+spam.
+
+Every leading bid is fully prepaid. When someone is outbid, e receives
+an equal refund. The eventual winning bid remains destroyed, so there
+is no escrow, debt, default, officer workload, or later collection
+step.
+
+Ownership is intentionally cosmetic. Future proposals can add Emojis,
+enable other methods of circulation, or carefully add effects if Agora
+wants to extend the system.]
+
+
+
+
+==========
+ID 9383
+Color (AI=1.0)
+class: ordinary
+author: Galle
+coauthors: ais523, Murphy
+
+
+Enact a new power 1 rule, entitled "Color", with the following text:
+---
+Color is a secured player switch with values grey (default), green, purple, and orange. The Paintor is an office, responsible for tracking color. Whenever an active player is grey, the Paintor SHALL, in a timely fashion, randomly select either green, purple, or orange, and announce the player and the result. Upon such an announcement, the player's color is switched to the selected value.
+
+For each non-default color, the first time per week that a proposal submitted by a player of that color is adopted, all other players of that color gain 5 radiance.
+
+A player CAN, but SHALL NOT, flip eir color to green, purple, or orange once per month by announcement.
+
+Players are ENCOURAGED to attribute great significance to eir color and what it says about em as a person.
+---
+
+[This is mostly a silly subgame intended to provide a simple alternative way to gain radiance, so that we could potentially make radiance wins require a higher point total. There is at least one intentional ambiguity here but hopefully nothing catastrophically broken.]
+
+
+
